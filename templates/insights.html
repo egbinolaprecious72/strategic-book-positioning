@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights | Strategic Book Market Positioning</title>
+    <meta name="description" content="Explore research-led insights on Amazon book categories, keyword research, competitor analysis and strategic book market positioning.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            <span class="logo-icon">◈</span>
+            <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav class="main-nav">
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+            <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}">About</a>
+            <a href="/services" class="{{ 'active' if request.path == '/services' else '' }}">Our Divisions</a>
+            <a href="/our-work" class="{{ 'active' if request.path == '/our-work' else '' }}">Our Work</a>
+            <a href="/process" class="{{ 'active' if request.path == '/process' else '' }}">Our Process</a>
+            <a href="/why-us" class="{{ 'active' if request.path == '/why-us' else '' }}">Why Choose Us</a>
+            <a href="/insights" class="{{ 'active' if request.path == '/insights' else '' }}">Insights</a>
+            <a href="/get-started" class="{{ 'active' if request.path == '/get-started' else '' }}">Get Started</a>
+            <a href="/get-started" class="header-btn">Work With Us →</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="christmas-insights">
+
+<section class="insights-hero christmas-insights-hero">
+    <div class="container">
+        <div class="insights-hero-content">
+            <span class="eyebrow">KNOWLEDGE • CREATIVITY • AUTHOR DEVELOPMENT</span>
+            <h1>Insights for <span>Every Chapter</span> of an Author's Journey.</h1>
+            <p>
+                Explore ideas and perspectives on book research, author branding,
+                professional presentation, digital presence and meaningful reader
+                discovery. A resource for authors thinking about what comes next.
+            </p>
+            <a href="#featured-insight" class="btn">Explore Our Insights →</a>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding insights-intro">
+    <div class="container insights-intro-grid">
+        <div>
+            <span class="eyebrow">A WIDER AUTHOR PERSPECTIVE</span>
+            <h2>There Is More to an Author's Journey Than Publishing.</h2>
+        </div>
+        <div>
+            <p>
+                Publishing a book is a significant achievement, but it can also
+                introduce new questions about how to present your work, develop
+                your author identity and connect with the people who may appreciate
+                your writing.
+            </p>
+            <p>
+                Authors may explore market research, branding, book presentation,
+                digital platforms and reader engagement at different stages of
+                their journey.
+            </p>
+            <p>
+                Our insights explore these areas to encourage thoughtful decisions
+                and a clearer understanding of the services available to authors.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-insight-section section-padding" id="featured-insight">
+    <div class="container featured-insight-grid">
+        <div class="featured-insight-image">
+            <img src="{{ url_for('static', filename='images/christmas/christmas-reader.jpg') }}"
+                 alt="A reader enjoying a book">
+            <span class="image-label">FEATURED INSIGHT</span>
+        </div>
+
+        <div class="featured-insight-content">
+            <span class="eyebrow">BEYOND THE BOOK</span>
+            <h2>What Happens After Your Book Is Published?</h2>
+            <p>
+                Publication marks an important milestone, but it does not have
+                to be the end of an author's development journey. It can be the
+                beginning of new opportunities to strengthen how a book and its
+                author are presented.
+            </p>
+            <p>
+                An author might consider whether the book is positioned clearly
+                for its intended market, whether its description communicates
+                its value, or whether the author's professional identity is
+                represented consistently.
+            </p>
+            <p>
+                Digital presence and reader discovery may also become important
+                considerations. The right priorities depend on the individual
+                author, the book and the goals of the project.
+            </p>
+            <a href="/services" class="text-link">Explore Our Author Services →</a>
+        </div>
+    </div>
+</section>
+
+<section class="insight-topics-section section-padding">
+    <div class="container">
+        <div class="insights-section-heading">
+            <span class="eyebrow">EXPLORE OUR KNOWLEDGE AREAS</span>
+            <h2>Six Topics Worth Exploring on Your Author Journey.</h2>
+            <p>
+                Discover different areas of professional author support,
+                from understanding the market to building connections with readers.
+            </p>
+        </div>
+
+        <div class="insight-topics-grid">
+
+            <article class="insight-topic-card">
+                <span class="topic-number">01</span>
+                <span class="topic-icon">⌕</span>
+                <h3>Understanding Your Book's Market</h3>
+                <p>
+                    Explore categories, keywords, comparable titles and
+                    marketplace research when considering where your book
+                    fits and how it may be presented.
+                </p>
+                <a href="/services">Explore Book Market Research →</a>
+            </article>
+
+            <article class="insight-topic-card">
+                <span class="topic-number">02</span>
+                <span class="topic-icon">◇</span>
+                <h3>Building an Author Brand</h3>
+                <p>
+                    Consider the role of an author biography, media kit,
+                    professional profile and consistent presentation
+                    in communicating your author identity.
+                </p>
+                <a href="/services">Explore Author Branding →</a>
+            </article>
+
+            <article class="insight-topic-card">
+                <span class="topic-number">03</span>
+                <span class="topic-icon">▤</span>
+                <h3>Professional Book Presentation</h3>
+                <p>
+                    Learn why descriptions, blurbs and the presentation
+                    of ebook and paperback editions deserve thoughtful
+                    attention.
+                </p>
+                <a href="/services">Explore Book Presentation →</a>
+            </article>
+
+            <article class="insight-topic-card">
+                <span class="topic-number">04</span>
+                <span class="topic-icon">✧</span>
+                <h3>Manuscript and Book Formatting</h3>
+                <p>
+                    Understand how manuscript formatting and the
+                    presentation of different book editions contribute
+                    to a professional reading experience.
+                </p>
+                <a href="/services">Explore Content Services →</a>
+            </article>
+
+            <article class="insight-topic-card">
+                <span class="topic-number">05</span>
+                <span class="topic-icon">◎</span>
+                <h3>Creating an Author's Digital Presence</h3>
+                <p>
+                    Explore author websites, landing pages, digital
+                    portfolios and professional social profiles as
+                    parts of an author's online presence.
+                </p>
+                <a href="/services">Explore Digital Presence →</a>
+            </article>
+
+            <article class="insight-topic-card">
+                <span class="topic-number">06</span>
+                <span class="topic-icon">♡</span>
+                <h3>Connecting Books with Readers</h3>
+                <p>
+                    Discover ideas around reader communities, reading
+                    campaigns, book discovery initiatives and meaningful
+                    author-reader engagement.
+                </p>
+                <a href="/services">Explore Visibility &amp; Discovery →</a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="insights-quote-section christmas-insights-quote">
+    <div class="container insights-quote-content">
+        <span class="eyebrow">A THOUGHTFUL AUTHOR PERSPECTIVE</span>
+        <h2>Every Book Has a Journey. Every Author Has a Next Chapter.</h2>
+        <p>
+            Research, presentation, professional identity and reader connection
+            each have a place in the wider journey of an author.
+        </p>
+    </div>
+</section>
+
+<section class="insights-cta section-padding">
+    <div class="container insights-cta-content">
+        <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+        <h2>What Does Your Author Project Need Next?</h2>
+        <p>
+            Whether you are considering market research, author branding,
+            book presentation, digital presence or reader discovery,
+            explore our five divisions and tell us about your project.
+        </p>
+        <a href="/get-started" class="btn">Explore Working With Us →</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-layout">
+
+        <div class="footer-brand">
+            <a href="/" class="logo">
+                <span class="logo-icon">◈</span>
+                <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+            </a>
+            <p>A Fully Online Author Services Company.</p>
+            <p>Research. Strategy. Presentation. Discovery.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Our Divisions</h3>
+            <a href="/services">Book Market Research</a>
+            <a href="/services">Author Branding &amp; Media</a>
+            <a href="/services">Book Content &amp; Presentation</a>
+            <a href="/services">Author Digital Presence</a>
+            <a href="/services">Visibility &amp; Discovery</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="/about">About Us</a>
+            <a href="/egbinola-precious">Meet the Founder</a>
+            <a href="/process">Our Process</a>
+            <a href="/why-us">Why Choose Us</a>
+            <a href="/insights">Insights</a>
+            <a href="/get-started">Get Started</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <p>Follow our professional updates and company activities.</p>
+            <a href="https://www.facebook.com/profile.php?id=61596101490130" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            <a href="https://www.instagram.com/egbinolaprecious0913?fqnt=MWtnZDIyMmp6d241Yg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="mailto:egbinolaprecious72@gmail.com">Email Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Information</h3>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Strategic Book Market Positioning. All rights reserved.
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

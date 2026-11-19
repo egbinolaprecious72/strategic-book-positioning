@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Choose Us | Strategic Book Market Positioning</title>
+<meta name="description" content="Discover our research-led, book-specific approach to Amazon market positioning and strategic research for authors.">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            <span class="logo-icon">◈</span>
+            <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav class="main-nav">
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+            <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}">About</a>
+            <a href="/services" class="{{ 'active' if request.path == '/services' else '' }}">Our Divisions</a>
+            <a href="/our-work" class="{{ 'active' if request.path == '/our-work' else '' }}">Our Work</a>
+            <a href="/process" class="{{ 'active' if request.path == '/process' else '' }}">Our Process</a>
+            <a href="/why-us" class="{{ 'active' if request.path == '/why-us' else '' }}">Why Choose Us</a>
+            <a href="/insights" class="{{ 'active' if request.path == '/insights' else '' }}">Insights</a>
+            <a href="/get-started" class="{{ 'active' if request.path == '/get-started' else '' }}">Get Started</a>
+            <a href="/get-started" class="header-btn">Work With Us →</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="christmas-why">
+
+<section class="why-hero christmas-why-hero">
+    <div class="container why-hero-content">
+        <span class="section-label">WHY WORK WITH US</span>
+        <h1>Thoughtful Support for <span>Every Author's Journey.</span></h1>
+        <p>From understanding your book's market to developing your author presence and connecting your work with readers, we bring different areas of author support together under one professional service.</p>
+        <a href="/get-started" class="btn">Explore Working With Us →</a>
+    </div>
+</section>
+
+<section class="why-intro section">
+    <div class="container why-intro-grid">
+        <div>
+            <span class="section-label">OUR APPROACH</span>
+            <h2>More Than One Part of an Author's Journey Matters.</h2>
+        </div>
+        <div>
+            <p>Building an author presence involves more than publishing a book. Authors may need market research, professional presentation, digital support and thoughtful ways to introduce their work to readers.</p>
+            <p>That is why our company brings together five specialised divisions. Each addresses a different area of author support, allowing us to consider the needs of individual projects rather than treating every author the same way.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-difference section">
+    <div class="container">
+        <div class="why-heading">
+            <span class="section-label">WHAT SETS US APART</span>
+            <h2>Six Principles Behind the Way We Work.</h2>
+            <p>Our approach is guided by research, individual attention, practical thinking and honest communication.</p>
+        </div>
+
+        <div class="why-cards">
+
+            <article class="why-card">
+                <span class="why-card-number">01</span>
+                <div class="why-card-icon">⌕</div>
+                <h3>Research Before Recommendations</h3>
+                <p>We value understanding before making suggestions. For market-positioning projects, this means examining relevant categories, keywords, comparable books and the wider marketplace.</p>
+                <span class="why-card-footer">Informed decision-making</span>
+            </article>
+
+            <article class="why-card">
+                <span class="why-card-number">02</span>
+                <div class="why-card-icon">◇</div>
+                <h3>Individual Project Attention</h3>
+                <p>Every author and book has its own context. We consider the subject, goals and particular requirements of a project when identifying relevant areas of support.</p>
+                <span class="why-card-footer">Support shaped around your needs</span>
+            </article>
+
+            <article class="why-card">
+                <span class="why-card-number">03</span>
+                <div class="why-card-icon">◎</div>
+                <h3>Five Areas of Specialised Support</h3>
+                <p>Our five divisions cover book market research, author branding, book presentation, digital presence, and visibility and discovery strategy.</p>
+                <span class="why-card-footer">A wider range of author services</span>
+            </article>
+
+            <article class="why-card">
+                <span class="why-card-number">04</span>
+                <div class="why-card-icon">✧</div>
+                <h3>Practical Recommendations</h3>
+                <p>We aim to make our guidance relevant to the project at hand, helping authors understand available service options and consider useful next steps.</p>
+                <span class="why-card-footer">Clarity with practical purpose</span>
+            </article>
+
+            <article class="why-card">
+                <span class="why-card-number">05</span>
+                <div class="why-card-icon">◈</div>
+                <h3>Clear Communication</h3>
+                <p>We believe authors should understand the services being discussed, the purpose of the work and the scope of the support they choose.</p>
+                <span class="why-card-footer">An understandable working process</span>
+            </article>
+
+            <article class="why-card">
+                <span class="why-card-number">06</span>
+                <div class="why-card-icon">↗</div>
+                <h3>Honest Expectations</h3>
+                <p>We communicate our services without promising guaranteed sales, reviews, rankings or reader reach. Our focus is on the work and support we can provide.</p>
+                <span class="why-card-footer">Transparency over hype</span>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="why-commitment christmas-why-commitment">
+    <div class="container why-commitment-grid">
+        <div class="why-commitment-image">
+            <img src="{{ url_for('static', filename='images/christmas/cozy-christmas-reading.jpg') }}" alt="A cosy Christmas reading setting with books">
+        </div>
+        <div class="why-commitment-content">
+            <span class="section-label">OUR COMMITMENT</span>
+            <h2>Author Support That Looks at the Bigger Picture.</h2>
+            <p>We recognise that an author's needs can extend beyond a single service. A book may need thoughtful market positioning, while its author may also be considering branding, presentation, a digital presence or ways to connect with readers.</p>
+            <p>Our five divisions bring these areas together. We aim to understand what each project requires and help authors identify the services that are relevant to their goals.</p>
+            <a href="/services" class="btn">Discover Our Five Divisions →</a>
+        </div>
+    </div>
+</section>
+
+<section class="why-cta christmas-why-cta">
+    <div class="container why-cta-content">
+        <span class="section-label">YOUR NEXT CHAPTER</span>
+        <h2>Give Your Author Journey a Thoughtful Next Step.</h2>
+        <p>This Christmas season, take time to consider what your book or author project may need next. Tell us about your goals and explore the support available across our five divisions.</p>
+        <a href="/get-started" class="btn">Let's Discuss Your Project →</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-layout">
+
+        <div class="footer-brand">
+            <a href="/" class="logo">
+                <span class="logo-icon">◈</span>
+                <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+            </a>
+            <p>A Fully Online Author Services Company.</p>
+            <p>Research. Strategy. Presentation. Discovery.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Our Divisions</h3>
+            <a href="/services">Book Market Research</a>
+            <a href="/services">Author Branding &amp; Media</a>
+            <a href="/services">Book Content &amp; Presentation</a>
+            <a href="/services">Author Digital Presence</a>
+            <a href="/services">Visibility &amp; Discovery</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="/about">About Us</a>
+            <a href="/egbinola-precious">Meet the Founder</a>
+            <a href="/process">Our Process</a>
+            <a href="/why-us">Why Choose Us</a>
+            <a href="/insights">Insights</a>
+            <a href="/get-started">Get Started</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <p>Follow our professional updates and company activities.</p>
+            <a href="https://www.facebook.com/profile.php?id=61596101490130" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            <a href="https://www.instagram.com/egbinolaprecious0913?fqnt=MWtnZDIyMmp6d241Yg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="mailto:egbinolaprecious72@gmail.com">Email Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Information</h3>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Strategic Book Market Positioning. All rights reserved.
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

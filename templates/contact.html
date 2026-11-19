@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Strategic Book Market Positioning</title>
+    <meta name="description" content="Contact Strategic Book Market Positioning to discuss Amazon market research, book positioning, and reader discoverability.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            <span class="logo-icon">◈</span>
+            <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav class="main-nav">
+            <a href="/" class="">Home</a>
+            <a href="/about" class="">About</a>
+            <a href="/services" class="">Services</a>
+            <a href="/process" class="">Our Process</a>
+            <a href="/why-us" class="">Why Choose Us</a>
+            <a href="/insights" class="">Insights</a>
+            <a href="/get-started" class="active">Get Started</a>
+            <a href="/get-started" class="header-btn">Get Started →</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="contact-hero">
+    <div class="contact-hero-overlay"></div>
+    <div class="contact-hero-content">
+        <span class="eyebrow">LET'S START A CONVERSATION</span>
+        <h1>Let's Discuss Your Book's Market Position.</h1>
+        <p>
+            Have a question about your book, our research process, or the
+            positioning services we offer? We'd be glad to hear from you.
+        </p>
+    </div>
+</section>
+
+<section class="contact-intro">
+    <div class="contact-intro-text">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Every Strong Strategy Begins with the Right Conversation.</h2>
+        <p>
+            Tell us a little about your book and what you would like to understand
+            about its position in the Amazon marketplace. Whether you are
+            exploring category opportunities, keyword relevance, competitor
+            activity, or reader discoverability, your enquiry is a useful place
+            to begin.
+        </p>
+        <p>
+            We approach every book as an individual project. The first step is
+            understanding what you have published and what you hope to achieve.
+        </p>
+    </div>
+
+    <div class="contact-info-card">
+        <span class="eyebrow">ENQUIRY INFORMATION</span>
+        <h3>What to Include</h3>
+        <ul>
+            <li>Your name and preferred contact email</li>
+            <li>Your book title and Amazon link, if available</li>
+            <li>Your book's genre or subject</li>
+            <li>The areas of positioning you want to explore</li>
+        </ul>
+        <p class="contact-note">
+            Sharing these details helps us understand your enquiry before
+            responding.
+        </p>
+    </div>
+</section>
+
+<section class="contact-form-section">
+    <div class="contact-form-heading">
+        <span class="eyebrow">SEND AN ENQUIRY</span>
+        <h2>Tell Us About Your Book.</h2>
+        <p>Complete the details below and we'll have a clearer starting point for the conversation.</p>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="form-notifications">
+            {% for category, message in messages %}
+                <p class="form-notification {{ category }}">{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<form class="contact-form" action="{{ url_for('contact') }}" method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="book">Book Title</label>
+            <input type="text" id="book" name="book" placeholder="Enter your book title">
+        </div>
+
+        <div class="form-group">
+            <label for="book-link">Amazon Book Link</label>
+            <input type="url" id="book-link" name="book-link" placeholder="https://www.amazon.com/...">
+        </div>
+
+        <div class="form-group">
+            <label for="service">What Would You Like to Discuss?</label>
+            <select id="service" name="service" required>
+                <option value="">Select an area of interest</option>
+                <option>Amazon Category & Subcategory Research</option>
+                <option>Amazon Keyword Research</option>
+                <option>Competitor Analysis</option>
+                <option>Strategic Book Market Positioning</option>
+                <option>Reader Discoverability Strategy</option>
+                <option>Market Opportunity Analysis</option>
+                <option>General Enquiry</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="package">Preferred Positioning Package</label>
+            <select id="package" name="package">
+                <option value="">Select a package (optional)</option>
+                <option value="Essential Positioning - $299">Essential Positioning - $299</option>
+                <option value="Advanced Positioning - $599">Advanced Positioning - $599</option>
+                <option value="Complete Market Positioning - $999">Complete Market Positioning - $999</option>
+                <option value="Premium Market Positioning - $1499">Premium Market Positioning - $1,499</option>
+                <option value="Not Sure Yet">Not Sure Yet - Recommend a Package</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us a little about your book and what you would like help understanding..." required></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn">Send Your Enquiry</button>
+
+
+    </form>
+</section>
+
+<section class="contact-bottom">
+    <span class="eyebrow">A RESEARCH-LED APPROACH</span>
+    <h2>Understand the Market Before Deciding Your Next Move.</h2>
+    <p>
+        Our work focuses on research, informed analysis, and practical
+        recommendations. We do not promise rankings, sales, reviews, or
+        guaranteed visibility.
+    </p>
+    <a href="/get-started" class="primary-btn">Explore Getting Started</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-layout">
+
+        <div class="footer-brand">
+            <a href="/" class="logo">
+                <span class="logo-icon">◈</span>
+                <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+            </a>
+            <p>A Fully Online Author Services Company.</p>
+            <p>Research. Strategy. Presentation. Discovery.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Our Divisions</h3>
+            <a href="/services">Book Market Research</a>
+            <a href="/services">Author Branding &amp; Media</a>
+            <a href="/services">Book Content &amp; Presentation</a>
+            <a href="/services">Author Digital Presence</a>
+            <a href="/services">Visibility &amp; Discovery</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="/about">About Us</a>
+            <a href="/egbinola-precious">Meet the Founder</a>
+            <a href="/process">Our Process</a>
+            <a href="/why-us">Why Choose Us</a>
+            <a href="/insights">Insights</a>
+            <a href="/get-started">Get Started</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <p>Follow our professional updates and company activities.</p>
+            <a href="https://www.facebook.com/profile.php?id=61596101490130" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            <a href="https://www.instagram.com/egbinolaprecious0913?fqnt=MWtnZDIyMmp6d241Yg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="mailto:egbinolaprecious72@gmail.com">Email Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Information</h3>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Strategic Book Market Positioning. All rights reserved.
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

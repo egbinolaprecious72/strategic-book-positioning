@@ -1,0 +1,38 @@
+instance/
+enquiries.db
+__pycache__/
+*.pyc
+.env
+*.db
+
+# Local backups and previous versions
+*backup*
+*before*
+app_before_*.py
+contact_backup.html
+*.zip
+
+# Private database and application files
+*.sqlite
+*.sqlite3
+instance/
+.env
+.env.*
+
+# Private uploaded materials
+static/uploads/
+uploads/
+
+# Local development files
+*.log
+
+# Python environments
+venv/
+.venv/
+env/
+
+# Temporary and operating-system files
+.DS_Store
+Thumbs.db
+*.tmp
+create_admin.py

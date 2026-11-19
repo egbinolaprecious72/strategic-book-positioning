@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101c32">
+
+    <title>Enquiry Details | Strategic Book Market Positioning</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f3f5f8;
+            color: #26344a;
+            font-family: Arial, sans-serif;
+        }
+
+        .admin-header {
+            background: #101c32;
+            color: white;
+            padding: 22px 6%;
+        }
+
+        .brand {
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            color: #c5a15b;
+        }
+
+        .header-subtitle {
+            margin-top: 7px;
+            color: #bdc8d8;
+            font-size: 12px;
+        }
+
+        .details-container {
+            width: 92%;
+            max-width: 1050px;
+            margin: 35px auto;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            background: #c5a15b;
+            color: #101c32;
+            padding: 12px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background: #d8b875;
+        }
+
+        .details-card {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,.05);
+        }
+
+        .page-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid #e9edf2;
+        }
+
+        h1 {
+            margin: 0;
+            color: #101c32;
+            font-size: 26px;
+        }
+
+        .reference {
+            margin-top: 9px;
+            color: #788397;
+            font-size: 13px;
+        }
+
+        .reference strong {
+            color: #c09a50;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            margin: 0 0 15px;
+            padding-bottom: 12px;
+            color: #101c32;
+            font-size: 17px;
+            border-bottom: 2px solid #c5a15b;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .detail {
+            min-width: 0;
+            padding: 17px;
+            background: #f8f9fb;
+            border: 1px solid #edf0f4;
+            border-radius: 8px;
+            overflow-wrap: anywhere;
+        }
+
+        .detail.full {
+            grid-column: 1 / -1;
+        }
+
+        .detail strong {
+            display: block;
+            margin-bottom: 9px;
+            color: #788397;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .7px;
+        }
+
+        .detail p {
+            margin: 0;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            font-size: 14px;
+        }
+
+        a {
+            color: #96702d;
+            overflow-wrap: anywhere;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 7px 12px;
+            background: #fff4dc;
+            color: #8b641e;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .media-card {
+            padding: 18px;
+            background: #f8f9fb;
+            border: 1px solid #edf0f4;
+            border-radius: 10px;
+        }
+
+        .media-card h3 {
+            margin: 0 0 14px;
+            color: #101c32;
+            font-size: 14px;
+        }
+
+        .media-preview {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #eef1f5;
+            border-radius: 8px;
+        }
+
+        .media-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .media-empty {
+            padding: 20px;
+            color: #8993a2;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .media-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .status-form select {
+            width: 100%;
+            max-width: 350px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #dce1e8;
+            border-radius: 6px;
+            background: white;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #101c32;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .primary-btn:hover {
+            background: #243b60;
+        }
+
+        .admin-footer {
+            padding: 25px 15px;
+            color: #8993a2;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        @media (max-width: 650px) {
+            .details-container {
+                width: 94%;
+                margin: 22px auto;
+            }
+
+            .details-card {
+                padding: 20px;
+            }
+
+            .details-grid,
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .detail.full {
+                grid-column: auto;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .media-preview {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="admin-header">
+    <div class="brand">
+        STRATEGIC <span>BOOK</span> MARKET POSITIONING
+    </div>
+    <div class="header-subtitle">
+        Administration / Enquiry Details
+    </div>
+</header>
+
+<main class="details-container">
+
+    <a class="back-button" href="{{ url_for('admin_dashboard') }}">
+        &larr; Back to Dashboard
+    </a>
+
+    {# Extract uploaded file paths from the enquiry message. #}
+    {% set uploads = namespace(photo='', cover='', pending_photo=false, pending_cover=false) %}
+
+    {% if enquiry.message %}
+        {% for line in enquiry.message.splitlines() %}
+            {% set cleaned = line.strip() %}
+
+            {% if cleaned %}
+                {% if uploads.pending_photo %}
+                    {% if cleaned.startswith('/static/uploads/author-photos/') %}
+                        {% set uploads.photo = cleaned %}
+                    {% endif %}
+                    {% set uploads.pending_photo = false %}
+                {% endif %}
+
+                {% if uploads.pending_cover %}
+                    {% if cleaned.startswith('/static/uploads/book-covers/') or cleaned.startswith('/static/uploads/author-photos/') %}
+                        {% set uploads.cover = cleaned %}
+                    {% endif %}
+                    {% set uploads.pending_cover = false %}
+                {% endif %}
+
+                {% if cleaned.startswith('Professional photo:') or cleaned.startswith('Professional photo link:') %}
+                    {% set candidate = cleaned.split(':', 1)[1].strip() %}
+                    {% if candidate.startswith('/static/uploads/author-photos/') %}
+                        {% set uploads.photo = candidate %}
+                    {% else %}
+                        {% set uploads.pending_photo = true %}
+                    {% endif %}
+                {% endif %}
+
+                {% if cleaned.startswith('Book cover:') or cleaned.startswith('Book cover link:') %}
+                    {% set candidate = cleaned.split(':', 1)[1].strip() %}
+                    {% if candidate.startswith('/static/uploads/book-covers/') or candidate.startswith('/static/uploads/author-photos/') %}
+                        {% set uploads.cover = candidate %}
+                    {% else %}
+                        {% set uploads.pending_cover = true %}
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <section class="details-card">
+
+        <div class="page-heading">
+            <div>
+                <h1>Author Enquiry Details</h1>
+                <div class="reference">
+                    Enquiry reference: <strong>#{{ enquiry.id }}</strong>
+                </div>
+            </div>
+            <span class="status-badge">
+                {{ enquiry.status or 'New' }}
+            </span>
+        </div>
+
+        <section class="section">
+            <h2 class="section-title">Author Information</h2>
+
+            <div class="details-grid">
+                <div class="detail">
+                    <strong>Author Name</strong>
+                    <p>{{ enquiry.name or 'Not provided' }}</p>
+                </div>
+
+                <div class="detail">
+                    <strong>Email Address</strong>
+                    <p>
+                        <a href="mailto:{{ enquiry.email }}">
+                            {{ enquiry.email or 'Not provided' }}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Book Information</h2>
+
+            <div class="details-grid">
+                <div class="detail">
+                    <strong>Book Title</strong>
+                    <p>{{ enquiry.book_title or 'Not provided' }}</p>
+                </div>
+
+                <div class="detail">
+                    <strong>Genre</strong>
+                    <p>{{ enquiry.genre or 'Not provided' }}</p>
+                </div>
+
+                <div class="detail">
+                    <strong>Publishing Status</strong>
+                    <p>{{ enquiry.publishing_status or 'Not provided' }}</p>
+                </div>
+
+                <div class="detail">
+                    <strong>Amazon Book Link</strong>
+                    <p>
+                        {% if enquiry.amazon_link and enquiry.amazon_link.startswith(('https://', 'http://')) %}
+                            <a href="{{ enquiry.amazon_link }}" target="_blank" rel="noopener noreferrer">
+                                Open Book Link
+                            </a>
+                        {% else %}
+                            {{ enquiry.amazon_link or 'Not provided' }}
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Selected Services</h2>
+
+            <div class="detail">
+                <strong>Service Interest</strong>
+                <p>{{ enquiry.service_interest or enquiry.service or 'Not specified' }}</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Author Media Kit Materials</h2>
+
+            <div class="media-grid">
+
+                <div class="media-card">
+                    <h3>Professional Photograph</h3>
+
+                    <div class="media-preview">
+                        {% if uploads.photo %}
+                            <img
+                                src="{{ uploads.photo }}"
+                                alt="Author professional photograph"
+                                loading="lazy"
+                            >
+                        {% else %}
+                            <div class="media-empty">
+                                No uploaded professional photograph.
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    {% if uploads.photo %}
+                        <a class="media-link" href="{{ uploads.photo }}" target="_blank" rel="noopener noreferrer">
+                            Open Photograph
+                        </a>
+                    {% endif %}
+                </div>
+
+                <div class="media-card">
+                    <h3>Book Cover</h3>
+
+                    <div class="media-preview">
+                        {% if uploads.cover %}
+                            <img
+                                src="{{ uploads.cover }}"
+                                alt="Uploaded book cover"
+                                loading="lazy"
+                            >
+                        {% else %}
+                            <div class="media-empty">
+                                No uploaded book cover.
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    {% if uploads.cover %}
+                        <a class="media-link" href="{{ uploads.cover }}" target="_blank" rel="noopener noreferrer">
+                            Open Book Cover
+                        </a>
+                    {% endif %}
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Enquiry Message & Details</h2>
+
+            <div class="detail full">
+                <strong>Research Goals, Biography, Description and Additional Information</strong>
+                <p>{{ enquiry.message or 'No additional information provided.' }}</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Submission Information</h2>
+
+            <div class="details-grid">
+                <div class="detail">
+                    <strong>Submission Source</strong>
+                    <p>{{ enquiry.source or 'Not specified' }}</p>
+                </div>
+
+                <div class="detail">
+                    <strong>Date Submitted</strong>
+                    <p>{{ enquiry.created_at or 'Not available' }}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Update Enquiry Status</h2>
+
+            <form
+                class="status-form"
+                method="POST"
+                action="{{ url_for('update_enquiry_status', enquiry_id=enquiry.id) }}"
+            >
+                <input
+                    type="hidden"
+                    name="csrf_token"
+                    value="{{ csrf_token() }}"
+                >
+
+                <select name="status" required>
+                    {% for status in ['New', 'Reviewed', 'Contacted', 'In Progress', 'Completed'] %}
+                        <option
+                            value="{{ status }}"
+                            {% if enquiry.status == status %}selected{% endif %}
+                        >
+                            {{ status }}
+                        </option>
+                    {% endfor %}
+                </select>
+
+                <br>
+
+                <button type="submit" class="primary-btn">
+                    Save Enquiry Status
+                </button>
+            </form>
+        </section>
+
+    </section>
+
+</main>
+
+<footer class="admin-footer">
+    &copy; 2026 Strategic Book Market Positioning. All rights reserved.
+</footer>
+
+</body>
+</html>

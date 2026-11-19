@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Divisions | Strategic Book Market Positioning</title>
+    <meta name="description" content="Explore five online author service divisions, from strategic book market research and author branding to book presentation, digital presence and reader discovery.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="/" class="logo">
+            <span class="logo-icon">◈</span>
+            <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="main-nav">
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+            <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}">About</a>
+            <a href="/services" class="{{ 'active' if request.path == '/services' else '' }}">Our Divisions</a>
+            <a href="/our-work" class="{{ 'active' if request.path == '/our-work' else '' }}">Our Work</a>
+            <a href="/process" class="{{ 'active' if request.path == '/process' else '' }}">Our Process</a>
+            <a href="/why-us" class="{{ 'active' if request.path == '/why-us' else '' }}">Why Choose Us</a>
+            <a href="/insights" class="{{ 'active' if request.path == '/insights' else '' }}">Insights</a>
+            <a href="/get-started" class="{{ 'active' if request.path == '/get-started' else '' }}">Get Started</a>
+            <a href="/get-started" class="header-btn">Work With Us →</a>
+        </nav>
+    </div>
+</header>
+
+<main class="christmas-divisions">
+
+    <!-- CHRISTMAS HERO -->
+    <section class="divisions-christmas-hero">
+        <div class="divisions-hero-overlay"></div>
+        <div class="divisions-hero-content">
+            <span class="section-label">A SEASON OF STORIES &amp; DISCOVERY</span>
+            <h1>Five Divisions.<br>A World of Possibilities for Authors.</h1>
+            <p>
+                This Christmas Reading season, explore the services that
+                support books, authors and meaningful connections with readers.
+            </p>
+            <a href="/get-started" class="btn btn-primary">Explore Our Services →</a>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="divisions-season-intro">
+        <div class="divisions-intro-image">
+            <img src="{{ url_for('static', filename='images/christmas/cozy-christmas-reading.jpg') }}"
+                 alt="A cosy Christmas reading setting with a book">
+        </div>
+        <div class="divisions-intro-copy">
+            <span class="section-label">OUR SERVICE STRUCTURE</span>
+            <h2>Thoughtful Support for Every Part of the Author Journey.</h2>
+            <p>
+                Strategic Book Market Positioning is a fully online author
+                services company. Our work is organised into five divisions,
+                each addressing a different aspect of book research,
+                presentation, author development and reader discovery.
+            </p>
+            <p>
+                Authors can enquire about an individual service or discuss
+                several areas that relate to their current needs.
+            </p>
+            <a href="/get-started" class="divisions-text-link">Tell Us About Your Book →</a>
+        </div>
+    </section>
+
+    <!-- DIVISION ONE -->
+    <section class="christmas-division-section">
+        <div class="christmas-division-heading">
+            <span class="christmas-division-number">01</span>
+            <div>
+                <span class="section-label">DIVISION ONE</span>
+                <h2>Book Market Research &amp; Positioning</h2>
+                <p>
+                    Researching where a book fits within its market and how
+                    readers may discover it through relevant search and
+                    category pathways.
+                </p>
+            </div>
+        </div>
+
+        <div class="christmas-division-grid">
+            <article class="christmas-service-card">
+                <span>01</span>
+                <h3>Amazon Category &amp; Subcategory Research</h3>
+                <p>Examining relevant Amazon categories and subcategories in relation to a book's subject and market.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>02</span>
+                <h3>Amazon Keyword Research</h3>
+                <p>Researching search terms and phrases that relate to a book's topic and intended readership.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>03</span>
+                <h3>Competitor Analysis</h3>
+                <p>Reviewing comparable books and their market presentation to understand the competitive landscape.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>04</span>
+                <h3>Strategic Book Market Positioning</h3>
+                <p>Assessing a book's subject, audience and market context to develop a clearer positioning direction.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>05</span>
+                <h3>Reader Discoverability Research</h3>
+                <p>Exploring how readers search for books within a particular subject, genre or area of interest.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>06</span>
+                <h3>Market Opportunity Analysis</h3>
+                <p>Examining relevant market areas and opportunities connected to a book's subject and readership.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- DIVISION TWO -->
+    <section class="christmas-division-section division-alternate">
+        <div class="christmas-division-heading">
+            <span class="christmas-division-number">02</span>
+            <div>
+                <span class="section-label">DIVISION TWO</span>
+                <h2>Author Branding &amp; Media Services</h2>
+                <p>
+                    Developing clear and professional materials that present
+                    authors, their backgrounds and their published work.
+                </p>
+            </div>
+        </div>
+
+        <div class="christmas-division-grid">
+            <article class="christmas-service-card">
+                <span>01</span>
+                <h3>Personalised Author Media Kit Creation</h3>
+                <p>Preparing an organised media presentation around an author's professional identity and work.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>02</span>
+                <h3>Author Biography Development</h3>
+                <p>Developing an author biography that communicates relevant background, experience and writing interests.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>03</span>
+                <h3>Professional Author Profile Presentation</h3>
+                <p>Organising an author's professional information into a clear and consistent profile.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>04</span>
+                <h3>Book Portfolio Preparation</h3>
+                <p>Bringing an author's published titles and relevant book information together in a portfolio format.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>05</span>
+                <h3>Author Brand Presentation</h3>
+                <p>Developing a consistent presentation of an author's identity, work and professional image.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- DIVISION THREE -->
+    <section class="christmas-division-section">
+        <div class="christmas-division-heading">
+            <span class="christmas-division-number">03</span>
+            <div>
+                <span class="section-label">DIVISION THREE</span>
+                <h2>Book Content &amp; Presentation</h2>
+                <p>
+                    Reviewing and preparing key book materials so that the
+                    information and presentation are clear and organised.
+                </p>
+            </div>
+        </div>
+
+        <div class="christmas-division-grid">
+            <article class="christmas-service-card">
+                <span>01</span>
+                <h3>Book Description Review</h3>
+                <p>Reviewing a book's description for clarity, structure and how it communicates the book to potential readers.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>02</span>
+                <h3>Book Blurb Development</h3>
+                <p>Developing or refining short promotional text that introduces a book and its central appeal.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>03</span>
+                <h3>Book Presentation Review</h3>
+                <p>Reviewing the way a book's available information and presentation materials are organised.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>04</span>
+                <h3>Manuscript Formatting</h3>
+                <p>Formatting manuscript documents according to the agreed project requirements.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>05</span>
+                <h3>Ebook and Paperback Presentation</h3>
+                <p>Reviewing the presentation of ebook and paperback editions and their associated materials.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- DIVISION FOUR -->
+    <section class="christmas-division-section division-alternate">
+        <div class="christmas-division-heading">
+            <span class="christmas-division-number">04</span>
+            <div>
+                <span class="section-label">DIVISION FOUR</span>
+                <h2>Author Digital Presence</h2>
+                <p>
+                    Supporting authors in organising their online identity
+                    through websites, landing pages and digital profile materials.
+                </p>
+            </div>
+        </div>
+
+        <div class="christmas-division-grid">
+            <article class="christmas-service-card">
+                <span>01</span>
+                <h3>Author Website Creation</h3>
+                <p>Creating an online website that presents an author's identity, books and relevant information.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>02</span>
+                <h3>Author Landing Page Creation</h3>
+                <p>Creating a focused online page for presenting an author, a book or a specific project.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>03</span>
+                <h3>Author Social Media Profile Setup</h3>
+                <p>Setting up selected social media profiles for an author's professional presence.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>04</span>
+                <h3>Digital Author Portfolio</h3>
+                <p>Preparing a digital collection of an author's professional information and book details.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>05</span>
+                <h3>Online Author Profile Development</h3>
+                <p>Developing a structured online profile that introduces an author and their work.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- DIVISION FIVE -->
+    <section class="christmas-division-section">
+        <div class="christmas-division-heading">
+            <span class="christmas-division-number">05</span>
+            <div>
+                <span class="section-label">DIVISION FIVE</span>
+                <h2>Author Visibility &amp; Discovery Strategy</h2>
+                <p>
+                    Developing reader-focused activities and opportunities
+                    that create meaningful connections between authors,
+                    their books and interested readers.
+                </p>
+            </div>
+        </div>
+
+        <div class="christmas-division-grid">
+            <article class="christmas-service-card">
+                <span>01</span>
+                <h3>Book Discovery Initiatives</h3>
+                <p>Planning activities that introduce books to relevant reader communities and discovery spaces.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>02</span>
+                <h3>Reader Engagement and Connection</h3>
+                <p>Developing opportunities for authors and readers to connect around books and shared interests.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>03</span>
+                <h3>Author-to-Reader Outreach</h3>
+                <p>Planning communication activities that introduce authors and their work to relevant readers.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>04</span>
+                <h3>Reading Campaigns</h3>
+                <p>Organising reading-focused activities around selected books and reading periods.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>05</span>
+                <h3>Reader Community Development</h3>
+                <p>Developing reader-focused communities and spaces around books and literary interests.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>06</span>
+                <h3>Author and Reader Engagement Activities</h3>
+                <p>Planning activities that encourage interaction and literary conversations between authors and readers.</p>
+            </article>
+            <article class="christmas-service-card">
+                <span>07</span>
+                <h3>Book Promotion Through Reader Experiences</h3>
+                <p>Exploring book promotion activities built around reading experiences and reader participation.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CHRISTMAS READING FEATURE -->
+    <section class="divisions-reading-feature">
+        <div class="divisions-reading-image">
+            <img src="{{ url_for('static', filename='images/christmas/christmas-reader.jpg') }}"
+                 alt="A reader enjoying a book during the Christmas season">
+        </div>
+        <div class="divisions-reading-copy">
+            <span class="section-label">CHRISTMAS READING</span>
+            <h2>Every Season Deserves a Good Story.</h2>
+            <p>
+                Christmas brings opportunities to discover stories, revisit
+                favourite books and explore new reading experiences.
+                We celebrate the connection between authors, books and readers.
+            </p>
+            <a href="/our-work" class="btn btn-primary">Explore Our Work →</a>
+        </div>
+    </section>
+
+    <!-- PROJECT APPROACH -->
+    <section class="divisions-project-note">
+        <span class="section-label">A PROJECT-BY-PROJECT APPROACH</span>
+        <h2>Every Author's Needs Are Different.</h2>
+        <p>
+            The right service depends on the book, the author's objectives
+            and the work required. You can enquire about one service or
+            several areas. We will review your request and discuss the
+            relevant scope before any work begins.
+        </p>
+    </section>
+
+    <!-- NEW YEAR SECTION -->
+    <section class="divisions-new-year">
+        <div>
+            <span class="section-label">LOOKING AHEAD</span>
+            <h2>A New Year. New Reading Goals. New Possibilities.</h2>
+            <p>
+                Whether you are preparing a new release, reviewing an
+                existing book or developing your author presence, thoughtful
+                planning can be a useful place to begin.
+            </p>
+            <a href="/get-started" class="btn btn-primary">Start a Conversation →</a>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="divisions-final-cta">
+        <span class="section-label">LET'S GET STARTED</span>
+        <h2>Where Would You Like to Begin?</h2>
+        <p>
+            Tell us about your book, your author goals and the services
+            you are interested in exploring.
+        </p>
+        <a href="/get-started" class="btn btn-primary">Submit an Enquiry →</a>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-layout">
+
+        <div class="footer-brand">
+            <a href="/" class="logo">
+                <span class="logo-icon">◈</span>
+                <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+            </a>
+            <p>A Fully Online Author Services Company.</p>
+            <p>Research. Strategy. Presentation. Discovery.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Our Divisions</h3>
+            <a href="/services">Book Market Research</a>
+            <a href="/services">Author Branding &amp; Media</a>
+            <a href="/services">Book Content &amp; Presentation</a>
+            <a href="/services">Author Digital Presence</a>
+            <a href="/services">Visibility &amp; Discovery</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="/about">About Us</a>
+            <a href="/egbinola-precious">Meet the Founder</a>
+            <a href="/process">Our Process</a>
+            <a href="/why-us">Why Choose Us</a>
+            <a href="/insights">Insights</a>
+            <a href="/get-started">Get Started</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <p>Follow our professional updates and company activities.</p>
+            <a href="https://www.facebook.com/profile.php?id=61596101490130" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            <a href="https://www.instagram.com/egbinolaprecious0913?fqnt=MWtnZDIyMmp6d241Yg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="mailto:egbinolaprecious72@gmail.com">Email Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Information</h3>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Strategic Book Market Positioning. All rights reserved.
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

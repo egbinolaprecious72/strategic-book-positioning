@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Login | Strategic Book Market Positioning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f6f0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .admin-login {
+            width: 100%;
+            max-width: 430px;
+            background: white;
+            padding: 42px;
+            border-radius: 12px;
+            box-shadow: 0 15px 45px rgba(16,28,50,.10);
+        }
+
+        .admin-login h1 {
+            color: #101c32;
+            margin-bottom: 10px;
+        }
+
+        .admin-login p {
+            color: #687386;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .admin-login label {
+            display: block;
+            margin: 18px 0 8px;
+            color: #26344a;
+            font-weight: 600;
+        }
+
+        .admin-login input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .admin-login button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 15px;
+            border: 0;
+            border-radius: 6px;
+            background: #101c32;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .admin-login button:hover {
+            background: #c5a15b;
+            color: #101c32;
+        }
+
+        .login-error {
+            background: #fff0ef;
+            color: #a32c25;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .login-brand {
+            color: #c5a15b;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-login">
+    <div class="login-brand">STRATEGIC BOOK MARKET POSITIONING</div>
+
+    <h1>Administrator Login</h1>
+    <p>Sign in to access your private author enquiry dashboard.</p>
+
+    {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+            <div class="login-error">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"
+               autocomplete="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+               autocomplete="current-password" required>
+
+        <button type="submit">Sign In Securely</button>
+    </form>
+</div>
+
+</body>
+</html>
