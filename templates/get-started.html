@@ -236,7 +236,7 @@
         </div>
 
         <div class="form-submit-area">
-            <button type="submit" class="primary-btn">Submit Project Enquiry</button>
+            <button type="submit" class="primary-btn">Send Enquiry by Email</button>
             <p>
                 Submitting an enquiry does not create an obligation to purchase
                 a service. Any proposed research scope and fees will be
@@ -503,6 +503,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     renderSpecificServiceDropdowns();
+});
+</script>
+
+
+<script>
+document.querySelector(".assessment-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    const fields = [
+        ["Author's Full Name", data.get("author_name")],
+        ["Email Address", data.get("email")],
+        ["Book Title", data.get("book_title")],
+        ["Book Genre", data.get("genre")],
+        ["Amazon Book Link", data.get("amazon_link")],
+        ["Publishing Status", data.get("publishing_status")],
+        ["Service Divisions", data.getAll("service_division").join(", ")],
+        ["Specific Services", data.getAll("specific_service").join("\n")],
+        ["Project Objectives", data.get("goals")]
+    ];
+
+    const body = fields.map(function (field) {
+        return field[0] + ":\n" + (field[1] || "Not provided");
+    }).join("\n\n");
+
+    const subject = "New Project Enquiry - " +
+        (data.get("author_name") || "Author");
+
+    const mailto = "mailto:egbinolaprecious72@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailto;
 });
 </script>
 
