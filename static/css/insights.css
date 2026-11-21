@@ -1,0 +1,298 @@
+/* ==========================================
+   INSIGHTS — PREMIUM YEAR-ROUND DESIGN
+   ========================================== */
+
+.christmas-insights {
+    --insight-navy: #17243B;
+    --insight-ivory: #F7F3EA;
+    --insight-gold: #C5A46D;
+    --insight-charcoal: #30343B;
+}
+
+/* HEADER */
+
+.site-header .nav-container .logo {
+    color: #17243B !important;
+}
+
+.site-header .main-nav a:not(.header-btn) {
+    color: #30343B;
+}
+
+.site-header .main-nav a.active {
+    color: #17243B;
+    border-color: #C5A46D;
+}
+
+.site-header .main-nav .header-btn {
+    background: #17243B !important;
+    color: #FFFFFF !important;
+    border-color: #17243B !important;
+}
+
+/* HERO */
+
+.christmas-insights .insights-hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(23,36,59,.95), rgba(23,36,59,.72)),
+        url("../images/featured-insight.jpg") center 45% / cover no-repeat !important;
+}
+
+.christmas-insights .insights-hero .eyebrow,
+.christmas-insights .featured-insight-content .eyebrow,
+.christmas-insights .insights-quote-content .eyebrow {
+    color: #C5A46D !important;
+}
+
+.christmas-insights .insights-hero h1 {
+    color: #FFFFFF !important;
+}
+
+.christmas-insights .insights-hero h1 span {
+    color: #C5A46D !important;
+}
+
+.christmas-insights .insights-hero p {
+    color: #F7F3EA !important;
+}
+
+.christmas-insights .insights-hero .btn {
+    background: #17243B !important;
+    border: 1px solid #C5A46D !important;
+    color: #FFFFFF !important;
+    border-radius: 3px;
+}
+
+/* INTRODUCTION */
+
+.christmas-insights .insights-intro {
+    background: #F7F3EA !important;
+}
+
+.christmas-insights .insights-intro .eyebrow,
+.christmas-insights .insights-section-heading .eyebrow,
+.christmas-insights .insights-cta .eyebrow {
+    color: #9A7A43 !important;
+}
+
+.christmas-insights .insights-intro-grid h2,
+.christmas-insights .insights-section-heading h2 {
+    color: #17243B !important;
+}
+
+.christmas-insights .insights-intro-grid > div:last-child {
+    border-left-color: #C5A46D !important;
+}
+
+.christmas-insights .insights-intro p {
+    color: #30343B !important;
+}
+
+/* FEATURED INSIGHT */
+
+.christmas-insights .featured-insight-section {
+    background: #FFFFFF !important;
+}
+
+.christmas-insights .featured-insight-image {
+    position: relative;
+}
+
+.christmas-insights .featured-insight-image::after {
+    border-color: #C5A46D !important;
+}
+
+.christmas-insights .featured-insight-image img {
+    border-radius: 3px;
+}
+
+.christmas-insights .image-label {
+    background: #17243B !important;
+    color: #FFFFFF !important;
+}
+
+.christmas-insights .featured-insight-content h2 {
+    color: #17243B !important;
+}
+
+.christmas-insights .featured-insight-content p {
+    color: #30343B !important;
+}
+
+.christmas-insights .text-link {
+    color: #17243B !important;
+    border-bottom-color: #C5A46D !important;
+}
+
+/* SIX INSIGHT TOPICS */
+
+.christmas-insights .insight-topics-section {
+    background: #F7F3EA !important;
+}
+
+.christmas-insights .insights-section-heading h2 {
+    color: #17243B !important;
+}
+
+.christmas-insights .insights-section-heading p {
+    color: #30343B !important;
+}
+
+.christmas-insights .insight-topic-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E8E1D5 !important;
+    border-top: 3px solid #C5A46D !important;
+    border-radius: 3px;
+    box-shadow: 0 10px 30px rgba(23,36,59,.06);
+}
+
+.christmas-insights .insight-topic-card:nth-child(2),
+.christmas-insights .insight-topic-card:nth-child(5) {
+    border-top-color: #17243B !important;
+}
+
+.christmas-insights .insight-topic-card:hover {
+    box-shadow: 0 18px 38px rgba(23,36,59,.12);
+    border-color: #C5A46D !important;
+}
+
+.christmas-insights .topic-number {
+    color: #C5A46D !important;
+}
+
+.christmas-insights .topic-icon {
+    background: #F7F3EA !important;
+    border-color: #E8E1D5 !important;
+    color: #17243B !important;
+    border-radius: 50%;
+}
+
+.christmas-insights .insight-topic-card h3 {
+    color: #17243B !important;
+}
+
+.christmas-insights .insight-topic-card p {
+    color: #30343B !important;
+}
+
+.christmas-insights .insight-topic-card a {
+    color: #17243B !important;
+}
+
+.christmas-insights .insight-topic-card a:hover {
+    color: #9A7A43 !important;
+}
+
+/* QUOTE SECTION */
+
+.christmas-insights .insights-quote-section {
+    background:
+        linear-gradient(rgba(23,36,59,.93), rgba(23,36,59,.93)),
+        url("../images/book-collection.jpg") center / cover no-repeat !important;
+}
+
+.christmas-insights .insights-quote-content h2 {
+    color: #FFFFFF !important;
+}
+
+.christmas-insights .insights-quote-content p {
+    color: #F7F3EA !important;
+}
+
+/* CLOSING CTA */
+
+.christmas-insights .insights-cta {
+    background: #F7F3EA !important;
+}
+
+.christmas-insights .insights-cta h2 {
+    color: #17243B !important;
+}
+
+.christmas-insights .insights-cta p {
+    color: #30343B !important;
+}
+
+.christmas-insights .insights-cta .btn {
+    background: #17243B !important;
+    color: #FFFFFF !important;
+    border: 1px solid #C5A46D !important;
+    border-radius: 3px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: #17243B !important;
+}
+
+.site-footer,
+.site-footer p,
+.site-footer h3,
+.site-footer a,
+.site-footer .copyright {
+    color: #F7F3EA !important;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 850px) {
+    .site-header .nav-container {
+        min-height: 76px;
+    }
+
+    .site-header .menu-toggle {
+        display: block;
+        margin-left: auto;
+        color: #17243B !important;
+        font-size: 28px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .site-header .main-nav {
+        z-index: 9999;
+    }
+
+    .site-header .main-nav > a:not(.header-btn) {
+        font-size: 15px !important;
+        padding: 15px 0;
+        color: #30343B;
+    }
+
+    .site-header .main-nav .header-btn {
+        font-size: 14px !important;
+    }
+
+    .christmas-insights .insights-hero {
+        min-height: 560px;
+        background-position: 58% center !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .christmas-insights .insights-hero {
+        min-height: 520px;
+    }
+
+    .christmas-insights .insights-hero h1 {
+        font-size: clamp(37px, 10vw, 45px);
+    }
+
+    .christmas-insights .insights-intro-grid > div:last-child {
+        border-left: 2px solid #C5A46D !important;
+    }
+
+    .christmas-insights .insight-topic-card {
+        min-height: auto;
+        padding: 32px 25px;
+    }
+
+    .christmas-insights .insights-quote-section {
+        background-position: center !important;
+    }
+}

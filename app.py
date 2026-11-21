@@ -43,74 +43,11 @@ app.config.update(
 
 csrf = CSRFProtect(app)
 
-# Load private Gmail settings
 load_dotenv()
 
-def send_email_notification(subject, body):
-    email_address = os.getenv("MAIL_USERNAME")
-    email_password = os.getenv("MAIL_PASSWORD")
-    recipient = os.getenv("NOTIFICATION_EMAIL")
-    mail_server = os.getenv("MAIL_SERVER", "smtp.gmail.com")
-    mail_port = int(os.getenv("MAIL_PORT", "587"))
-
-    if not email_address or not email_password or not recipient:
-        raise RuntimeError("Email settings are incomplete.")
-
-    email = EmailMessage()
-    email["Subject"] = subject
-    email["From"] = f'"Egbinola Precious | Strategic Book Market Positioning" <{email_address}>'
-    email["To"] = recipient
-    email.set_content(body)
-
-    context = ssl.create_default_context()
-
-    with smtplib.SMTP_SSL(
-        mail_server, mail_port, timeout=20, context=context
-    ) as server:
-        server.login(email_address, email_password)
-        server.send_message(email)
-
-
-
-def send_author_confirmation(author_email, author_name, book_title):
-    email_address = os.getenv("MAIL_USERNAME")
-    email_password = os.getenv("MAIL_PASSWORD")
-    mail_server = os.getenv("MAIL_SERVER", "smtp.gmail.com")
-    mail_port = int(os.getenv("MAIL_PORT", "465"))
-
-    if not email_address or not email_password:
-        raise RuntimeError("Email settings are incomplete.")
-
-    email = EmailMessage()
-    email["Subject"] = "We Have Received Your Enquiry - Strategic Book Market Positioning"
-    email["From"] = f'"Egbinola Precious | Strategic Book Market Positioning" <{email_address}>'
-    email["To"] = author_email
-
-    email.set_content(f"""Hello {author_name},
-
-I'm Egbinola Precious from Strategic Book Market Positioning. Thank you for contacting us.
-
-We have successfully received your enquiry about "{book_title or "your book"}".
-
-We will review the information you submitted and contact you at this email address to discuss your book's market positioning needs and the possible next steps.
-
-You can also reply directly to this email if you would like to add any information or ask a question.
-
-We appreciate your interest and look forward to connecting with you.
-
-Best regards,
-Egbinola Precious
-Strategic Book Market Positioning
-""")
-
-    context = ssl.create_default_context()
-
-    with smtplib.SMTP_SSL(
-        mail_server, mail_port, timeout=20, context=context
-    ) as server:
-        server.login(email_address, email_password)
-        server.send_message(email)
-
+# Google Apps Script email delivery
+import json
+from urllib.request import Request, urlopen
 
 
 def send_enquiry_emails_in_background(
@@ -118,14 +55,52 @@ def send_enquiry_emails_in_background(
 ):
     def send_emails():
         try:
-            send_email_notification(subject, body)
-        except Exception:
-            app.logger.exception("Administrator notification failed.")
+            script_url = os.getenv("GOOGLE_SCRIPT_URL")
+            secret = os.getenv("EMAIL_WEBHOOK_SECRET")
+            admin_email = os.getenv("NOTIFICATION_EMAIL")
 
-        try:
-            send_author_confirmation(author_email, author_name, book_title)
+            if not all([script_url, secret, admin_email]):
+                raise RuntimeError(
+                    "Google email settings are incomplete."
+                )
+
+            payload = {
+                "key": secret,
+                "adminEmail": admin_email,
+                "authorEmail": author_email,
+                "authorName": author_name,
+                "bookTitle": book_title,
+                "subject": subject,
+                "body": body
+            }
+
+            request_data = json.dumps(payload).encode("utf-8")
+
+            email_request = Request(
+                script_url,
+                data=request_data,
+                headers={"Content-Type": "application/json"},
+                method="POST"
+            )
+
+            with urlopen(email_request, timeout=40) as response:
+                result = json.loads(
+                    response.read().decode("utf-8")
+                )
+
+            if not result.get("success"):
+                raise RuntimeError(
+                    result.get("error", "Email delivery was unsuccessful.")
+                )
+
+            app.logger.info(
+                "Administrator notification and author confirmation sent."
+            )
+
         except Exception:
-            app.logger.exception("Author confirmation email failed.")
+            app.logger.exception(
+                "Google Apps Script email delivery failed."
+            )
 
     thread = threading.Thread(target=send_emails, daemon=True)
     thread.start()
@@ -259,7 +234,7 @@ Author's goals:
 Open your private administration dashboard to review the request:
 
 ADMIN DASHBOARD:
-https://egbinolaprecious.pythonanywhere.com/admin/login
+https://strategic-book-positioning.onrender.com/admin/login
 """
 
         send_enquiry_emails_in_background(

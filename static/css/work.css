@@ -1,0 +1,591 @@
+
+/* =========================================
+   OUR WORK - EDITORIAL PAGE DESIGN
+========================================= */
+
+.christmas-our-work {
+    --work-navy: #17243B;
+    --work-ivory: #F7F3EA;
+    --work-gold: #C5A46D;
+    --work-charcoal: #30343B;
+    --work-muted: #687080;
+    color: var(--work-charcoal);
+    background: #FFFFFF;
+}
+
+/* HEADER */
+
+.site-header .nav-container .logo {
+    color: var(--work-navy) !important;
+}
+
+.site-header .main-nav a:not(.header-btn) {
+    color: var(--work-charcoal);
+}
+
+.site-header .main-nav a.active {
+    color: var(--work-navy);
+    border-color: var(--work-gold);
+}
+
+.site-header .main-nav .header-btn {
+    background: var(--work-navy) !important;
+    color: #FFFFFF !important;
+    border-color: var(--work-navy) !important;
+}
+
+/* HERO */
+
+.work-christmas-hero {
+    position: relative;
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 90px 8%;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(23, 36, 59, .94),
+            rgba(23, 36, 59, .76)
+        ),
+        url("../images/market-research.jpg") center 45% / cover no-repeat;
+}
+
+.work-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(23, 36, 59, .24),
+        transparent
+    );
+}
+
+.work-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+}
+
+.christmas-our-work .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #8A6D3B;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.work-hero-content .section-label,
+.work-reading-copy .section-label,
+.work-seasonal-content .section-label,
+.work-final-cta .section-label {
+    color: var(--work-gold);
+}
+
+.work-hero-content h1 {
+    margin: 0 0 24px;
+    color: #FFFFFF;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(38px, 5.2vw, 65px);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.work-hero-content h1 span {
+    color: #E5D2AD;
+}
+
+.work-hero-content p {
+    max-width: 690px;
+    margin-bottom: 30px;
+    color: #F2F0EA;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* BUTTONS */
+
+.christmas-our-work .btn-primary {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid var(--work-gold);
+    border-radius: 3px;
+    background: var(--work-gold);
+    color: var(--work-navy);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-decoration: none;
+    transition: background .25s ease, color .25s ease;
+}
+
+.christmas-our-work .btn-primary:hover {
+    background: transparent;
+    color: var(--work-gold);
+}
+
+/* INTRODUCTION */
+
+.work-story-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    padding: 100px 8%;
+    background: var(--work-ivory);
+}
+
+.work-story-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.work-story-copy h2,
+.work-core-copy h2,
+.work-section-heading h2,
+.work-reading-copy h2,
+.work-seasonal-content h2,
+.work-final-cta h2 {
+    margin: 0 0 22px;
+    color: var(--work-navy);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(29px, 3.2vw, 42px);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.work-story-copy p,
+.work-core-copy p,
+.work-section-heading p,
+.work-reading-copy p,
+.work-seasonal-content p,
+.work-final-cta p {
+    margin-bottom: 19px;
+    color: var(--work-muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.work-text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--work-navy);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid var(--work-gold);
+    padding-bottom: 6px;
+}
+
+/* CORE SPECIALITY */
+
+.work-core-section {
+    padding: 105px 8%;
+    background: #FFFFFF;
+}
+
+.work-core-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 70px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.work-core-image img {
+    display: block;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+
+.work-core-copy ul {
+    margin: 25px 0;
+    padding-left: 22px;
+}
+
+.work-core-copy li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+    color: var(--work-charcoal);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.work-core-copy li::marker {
+    color: var(--work-gold);
+}
+
+/* FIVE DIVISIONS */
+
+.work-five-divisions {
+    padding: 100px 8%;
+    background: var(--work-ivory);
+}
+
+.work-section-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.work-christmas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.work-christmas-card {
+    min-height: 300px;
+    padding: 32px 27px;
+    border: 1px solid #E8E1D5;
+    border-top: 3px solid var(--work-gold);
+    background: #FFFFFF;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.work-christmas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(23, 36, 59, .09);
+}
+
+.work-number {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: var(--work-gold);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+}
+
+.work-christmas-card h3 {
+    margin: 0 0 16px;
+    color: var(--work-navy);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.work-christmas-card p {
+    margin-bottom: 22px;
+    color: var(--work-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.work-christmas-card a {
+    display: inline-block;
+    color: var(--work-navy);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid var(--work-gold);
+    padding-bottom: 5px;
+}
+
+/* BOOKS, AUTHORS AND READERS */
+
+.work-christmas-reading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    background: var(--work-navy);
+}
+
+.work-reading-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 490px;
+    object-fit: cover;
+}
+
+.work-reading-copy {
+    padding: 85px 9%;
+    align-self: center;
+}
+
+.work-reading-copy h2 {
+    color: #FFFFFF;
+}
+
+.work-reading-copy p {
+    color: #E4E6EA;
+}
+
+/* PLANNING FOR THE NEXT STAGE */
+
+.work-seasonal-message {
+    padding: 100px 8%;
+    background:
+        linear-gradient(
+            rgba(23, 36, 59, .90),
+            rgba(23, 36, 59, .90)
+        ),
+        url("../images/author-working.jpg") center 45% / cover no-repeat;
+    text-align: center;
+}
+
+.work-seasonal-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-seasonal-content h2 {
+    color: #FFFFFF;
+}
+
+.work-seasonal-content p {
+    color: #E7E8EB;
+}
+
+/* FINAL CTA */
+
+.work-final-cta {
+    padding: 95px 8%;
+    background: var(--work-ivory);
+    text-align: center;
+}
+
+.work-final-cta > * {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-final-cta p {
+    margin-bottom: 28px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: var(--work-navy) !important;
+}
+
+.site-footer,
+.site-footer p,
+.site-footer h3,
+.site-footer a,
+.site-footer .copyright {
+    color: var(--work-ivory) !important;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .work-story-intro,
+    .work-core-grid {
+        gap: 35px;
+        padding: 75px 6%;
+    }
+
+    .work-christmas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .work-five-divisions {
+        padding: 80px 6%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .work-christmas-hero {
+        min-height: 520px;
+        padding: 75px 7%;
+        background-position: 57% center;
+    }
+
+    .work-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .work-hero-content p {
+        font-size: 14px;
+    }
+
+    .work-story-intro,
+    .work-core-grid,
+    .work-christmas-reading {
+        grid-template-columns: 1fr;
+    }
+
+    .work-story-intro,
+    .work-core-section {
+        padding: 65px 7%;
+    }
+
+    .work-story-image img {
+        height: 280px;
+    }
+
+    .work-core-image img {
+        height: 290px;
+    }
+
+    .work-five-divisions {
+        padding: 70px 7%;
+    }
+
+    .work-section-heading {
+        margin-bottom: 35px;
+    }
+
+    .work-christmas-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .work-christmas-card {
+        min-height: auto;
+        padding: 28px 24px;
+    }
+
+    .work-reading-image img {
+        min-height: 0;
+        height: 300px;
+    }
+
+    .work-reading-copy {
+        padding: 60px 7%;
+    }
+
+    .work-seasonal-message,
+    .work-final-cta {
+        padding: 70px 7%;
+    }
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 850px) {
+    .site-header .menu-toggle {
+        display: block;
+        margin-left: auto;
+        color: var(--work-navy) !important;
+        font-size: 28px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .site-header .main-nav {
+        z-index: 9999;
+    }
+
+    .site-header .main-nav > a:not(.header-btn) {
+        font-size: 15px !important;
+        padding: 15px 0;
+    }
+
+    .site-header .main-nav .header-btn {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================
+   OUR WORK - FINAL VISUAL CORRECTIONS
+========================================= */
+
+/* NAVY READING SECTION */
+.christmas-our-work .work-christmas-reading {
+    background: #17243B !important;
+}
+
+.christmas-our-work .work-reading-copy h2 {
+    color: #FFFFFF !important;
+}
+
+.christmas-our-work .work-reading-copy p {
+    color: #E4E6EA !important;
+    opacity: 1 !important;
+}
+
+/* NAVY PLANNING SECTION */
+.christmas-our-work .work-seasonal-message {
+    background:
+        linear-gradient(
+            rgba(23, 36, 59, .92),
+            rgba(23, 36, 59, .92)
+        ),
+        url("../images/author-working.jpg") center 45% / cover no-repeat !important;
+}
+
+.christmas-our-work .work-seasonal-content h2 {
+    color: #FFFFFF !important;
+}
+
+.christmas-our-work .work-seasonal-content p {
+    color: #F7F3EA !important;
+    opacity: 1 !important;
+}
+
+/* FINAL CTA */
+.christmas-our-work .work-final-cta {
+    background: #F7F3EA !important;
+}
+
+.christmas-our-work .work-final-cta h2 {
+    color: #17243B !important;
+}
+
+.christmas-our-work .work-final-cta p {
+    color: #30343B !important;
+    opacity: 1 !important;
+}
+
+/* NAVY BUTTONS */
+.christmas-our-work .btn.btn-primary {
+    background: #17243B !important;
+    color: #FFFFFF !important;
+    border: 1px solid #C5A46D !important;
+}
+
+.christmas-our-work .btn.btn-primary:hover {
+    background: #303D55 !important;
+    color: #FFFFFF !important;
+}
+
+/* IMPROVE INTRODUCTION AND SPECIALITY TEXT */
+.christmas-our-work .work-story-copy p,
+.christmas-our-work .work-core-copy p {
+    color: #30343B !important;
+    opacity: 1 !important;
+}
+
+/* DEEP NAVY FOOTER */
+body .christmas-our-work + .site-footer {
+    background: #17243B !important;
+    color: #F7F3EA !important;
+}
+
+body .christmas-our-work + .site-footer p,
+body .christmas-our-work + .site-footer h3,
+body .christmas-our-work + .site-footer a,
+body .christmas-our-work + .site-footer .copyright,
+body .christmas-our-work + .site-footer .logo {
+    color: #F7F3EA !important;
+}
+
+/* MOBILE TEXT READABILITY */
+@media (max-width: 600px) {
+    .christmas-our-work .work-story-copy p,
+    .christmas-our-work .work-core-copy p,
+    .christmas-our-work .work-reading-copy p,
+    .christmas-our-work .work-seasonal-content p,
+    .christmas-our-work .work-final-cta p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}

@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Reading | Strategic Book Market Positioning</title>
-    <meta name="description" content="Discover the joy of Christmas reading with seasonal book inspiration, reading activities, author discovery and a fresh New Year reading journey from Strategic Book Market Positioning.">
+
+    <title>Strategic Book Market Positioning | Author Services & Book Marketing</title>
+
+    <meta name="description" content="Strategic Book Market Positioning provides thoughtful author services in book market research, author branding, book presentation, digital presence, and reader discovery.">
+
+    <meta name="theme-color" content="#17243B">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
 </head>
+
 <body>
 
 <header class="site-header">
@@ -16,355 +23,335 @@
             <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
         </a>
 
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
 
         <nav class="main-nav">
-            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
-            <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}">About</a>
-            <a href="/services" class="{{ 'active' if request.path == '/services' else '' }}">Our Divisions</a>
-            <a href="/our-work" class="{{ 'active' if request.path == '/our-work' else '' }}">Our Work</a>
-            <a href="/process" class="{{ 'active' if request.path == '/process' else '' }}">Our Process</a>
-            <a href="/why-us" class="{{ 'active' if request.path == '/why-us' else '' }}">Why Choose Us</a>
-            <a href="/insights" class="{{ 'active' if request.path == '/insights' else '' }}">Insights</a>
-            <a href="/get-started" class="{{ 'active' if request.path == '/get-started' else '' }}">Get Started</a>
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Our Divisions</a>
+            <a href="/our-work">Our Work</a>
+            <a href="/process">Our Process</a>
+            <a href="/why-us">Why Choose Us</a>
+            <a href="/insights">Insights</a>
+            <a href="/get-started">Get Started</a>
             <a href="/get-started" class="header-btn">Work With Us →</a>
         </nav>
     </div>
 </header>
 
-<main class="christmas-home">
+<main class="professional-home">
 
-    <!-- CHRISTMAS READING HERO -->
-    <section class="christmas-hero">
-        <div class="christmas-hero-image"></div>
-        <div class="christmas-hero-overlay"></div>
+    <!-- HERO -->
+    <section class="home-hero">
+        <div class="container home-hero-grid">
 
-        <div class="christmas-hero-content">
-            <span class="christmas-eyebrow">A SEASON OF STORIES & DISCOVERY</span>
-            <h1>Make Room for<br><span>Christmas Reading.</span></h1>
-            <p>
-                Let the season bring you closer to wonderful stories,
-                meaningful reading moments and books waiting to be discovered.
-            </p>
+            <div class="hero-copy">
+                <span class="section-label">STRATEGY FOR AUTHORS. DIRECTION FOR BOOKS.</span>
 
-            <div class="christmas-hero-actions">
-                <a href="#christmas-experience" class="christmas-button">
-                    Explore Christmas Reading
-                </a>
-                <a href="#featured-reading" class="christmas-text-link">
-                    Discover Reading Inspiration ↓
-                </a>
+                <h1>Helping Authors Position, Present and Grow Their Books.</h1>
+
+                <p class="hero-description">
+                    Research-led strategies. Thoughtful presentation.
+                    Meaningful reader discovery.
+                </p>
+
+                <p>
+                    We help authors explore their book markets, strengthen
+                    their professional presentation, develop their digital
+                    presence and identify opportunities to reach readers.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="/get-started" class="primary-link">Tell Us About Your Book →</a>
+                    <a href="/services" class="secondary-link">Explore Our Divisions</a>
+                </div>
+
+                <span class="hero-note">A fully online author services company.</span>
             </div>
 
-            <div class="christmas-hero-note">
-                <span>✦</span> Stories make the season more meaningful.
-            </div>
-        </div>
 
-        <div class="christmas-hero-decoration" aria-hidden="true">
-            <span>✦</span>
-            <span>❄</span>
-            <span>✧</span>
         </div>
     </section>
 
+    <!-- INTRODUCTION -->
+    <section class="home-intro">
+        <div class="container intro-grid">
 
-    <!-- WELCOME -->
-    <section class="christmas-welcome" id="christmas-experience">
-        <div class="christmas-section-heading">
-            <span class="christmas-kicker">WELCOME TO THE READING SEASON</span>
-            <h2>A Little More Time for <span>Stories.</span></h2>
-            <p>
-                Christmas is a wonderful opportunity to slow down, discover
-                different perspectives and make space for books. Whether you
-                enjoy thoughtful nonfiction, inspiring stories or imaginative
-                adventures, there is always something new to explore.
-            </p>
-        </div>
-
-        <div class="christmas-welcome-features">
-            <article>
-                <span class="feature-symbol">✧</span>
-                <h3>Discover Books</h3>
-                <p>Explore reading inspiration and discover books across different interests and genres.</p>
-            </article>
-
-            <article>
-                <span class="feature-symbol">❄</span>
-                <h3>Enjoy Reading</h3>
-                <p>Create peaceful moments for reading, reflection and sharing the stories you enjoy.</p>
-            </article>
-
-            <article>
-                <span class="feature-symbol">✦</span>
-                <h3>Meet New Perspectives</h3>
-                <p>Find fresh ideas, different voices and meaningful connections through books.</p>
-            </article>
-        </div>
-    </section>
-
-
-    <!-- FEATURED READING INSPIRATION -->
-    <section class="christmas-featured" id="featured-reading">
-        <div class="christmas-featured-image">
-            <img
-                src="{{ url_for('static', filename='images/christmas/christmas-reader.jpg') }}"
-                alt="A reader enjoying a book in a festive setting"
-                loading="lazy">
-            <span class="image-caption">A moment for a good story</span>
-        </div>
-
-        <div class="christmas-featured-copy">
-            <span class="christmas-kicker">YOUR SEASONAL BOOKSHELF</span>
-            <h2>Find Your Next <span>Favourite Read.</span></h2>
-            <p>
-                Every reader has a different idea of the perfect seasonal book.
-                Some look for inspiration, others enjoy personal development,
-                uplifting stories, thoughtful reflections or an entirely new
-                adventure.
-            </p>
-            <p>
-                Use this season to explore books that match your interests,
-                introduce you to new ideas and give you something worthwhile
-                to carry into the year ahead.
-            </p>
-            <a href="/insights" class="christmas-outline-button">Explore Our Insights →</a>
-        </div>
-    </section>
-
-
-    <!-- READING ACTIVITIES -->
-    <section class="christmas-activities">
-        <div class="christmas-section-heading light-heading">
-            <span class="christmas-kicker">MAKE READING PART OF THE SEASON</span>
-            <h2>Christmas Reading <span>Activities.</span></h2>
-            <p>
-                Give yourself simple, enjoyable ways to make reading part
-                of your seasonal routine.
-            </p>
-        </div>
-
-        <div class="christmas-activity-grid">
-            <article class="christmas-activity-card">
-                <span class="activity-number">01</span>
-                <span class="activity-icon">📖</span>
-                <h3>The Christmas Reading Challenge</h3>
-                <p>
-                    Choose a book, set a personal reading target and enjoy
-                    a little progress each day.
-                </p>
-            </article>
-
-            <article class="christmas-activity-card">
-                <span class="activity-number">02</span>
-                <span class="activity-icon">✍</span>
-                <h3>Stories Worth Sharing</h3>
-                <p>
-                    Think about a story or idea you enjoyed and share
-                    what made it meaningful to you.
-                </p>
-            </article>
-
-            <article class="christmas-activity-card">
-                <span class="activity-number">03</span>
-                <span class="activity-icon">🎁</span>
-                <h3>Give the Gift of a Book</h3>
-                <p>
-                    Consider a book that could inspire, encourage or
-                    entertain someone special.
-                </p>
-            </article>
-
-            <article class="christmas-activity-card">
-                <span class="activity-number">04</span>
-                <span class="activity-icon">🌟</span>
-                <h3>Discover a New Author</h3>
-                <p>
-                    Explore a writer whose work, ideas or storytelling
-                    offers a fresh perspective.
-                </p>
-            </article>
-        </div>
-    </section>
-
-
-    <!-- AUTHOR AND BOOK DISCOVERY -->
-    <section class="christmas-discovery">
-        <div class="christmas-discovery-copy">
-            <span class="christmas-kicker">FOR READERS & AUTHORS</span>
-            <h2>Every Book Deserves a Chance to Be <span>Discovered.</span></h2>
-            <p>
-                Behind every book is an author, an idea and a reason for
-                telling a story. Reading seasons create opportunities to
-                explore different books and learn about the people behind them.
-            </p>
-            <p>
-                Strategic Book Market Positioning works across research,
-                presentation and discovery services to support authors
-                throughout their publishing journey.
-            </p>
-            <a href="/services" class="christmas-button">Explore Our Divisions →</a>
-        </div>
-
-        <div class="christmas-discovery-image">
-            <img
-                src="{{ url_for('static', filename='images/christmas/christmas-child-reading.jpg') }}"
-                alt="A child enjoying a book during the Christmas season"
-                loading="lazy">
-        </div>
-    </section>
-
-
-    <!-- CHRISTMAS GALLERY -->
-    <section class="christmas-gallery">
-        <div class="christmas-section-heading">
-            <span class="christmas-kicker">THE JOY OF A READING MOMENT</span>
-            <h2>Little Moments, <span>Wonderful Stories.</span></h2>
-            <p>
-                A quiet corner, a favourite book or a few peaceful minutes.
-                Make room for the reading moments that matter to you.
-            </p>
-        </div>
-
-        <div class="christmas-gallery-grid">
-            <figure class="gallery-large">
-                <img
-                    src="{{ url_for('static', filename='images/christmas/cozy-christmas-reading.jpg') }}"
-                    alt="A cosy reading moment with a book and candle"
-                    loading="lazy">
-                <figcaption>Cosy moments with a good book</figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="{{ url_for('static', filename='images/christmas/christmas-reader.jpg') }}"
-                    alt="A person enjoying a Christmas-season book"
-                    loading="lazy">
-                <figcaption>Make time for stories</figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="{{ url_for('static', filename='images/christmas/christmas-child-reading.jpg') }}"
-                    alt="A young reader enjoying a book"
-                    loading="lazy">
-                <figcaption>Inspiring a love of reading</figcaption>
-            </figure>
-        </div>
-    </section>
-
-
-    <!-- NEW YEAR READING -->
-    <section class="christmas-new-year">
-        <div class="new-year-decoration" aria-hidden="true">✦</div>
-        <div class="new-year-content">
-            <span class="christmas-kicker">A FRESH CHAPTER AWAITS</span>
-            <h2>A New Year.<br><span>A New Reading Journey.</span></h2>
-            <p>
-                Carry the joy of reading beyond Christmas. Choose new topics
-                to explore, make space for learning and create reading goals
-                that fit the year you want to build.
-            </p>
-
-            <div class="new-year-ideas">
-                <span>Explore a new genre</span>
-                <span>Read with intention</span>
-                <span>Discover new authors</span>
+            <div>
+                <span class="section-label">WHO WE ARE</span>
+                <h2>More Than a Book on a Shelf. A Story Worth Positioning.</h2>
             </div>
 
-            <a href="/insights" class="christmas-button light-button">
-                Find Reading Inspiration →
-            </a>
+            <div class="intro-copy">
+                <p>
+                    Strategic Book Market Positioning is a fully online
+                    author services company bringing together research,
+                    strategy, presentation and discovery.
+                </p>
+                <p>
+                    We recognise that every book has its own subject,
+                    audience and purpose. Our approach begins by
+                    understanding the project before considering the
+                    support that may be appropriate.
+                </p>
+                <a href="/about" class="text-link">Discover Our Company →</a>
+            </div>
+
         </div>
     </section>
 
+    <!-- FIVE DIVISIONS -->
+    <section class="home-divisions">
+        <div class="container">
 
-    <!-- COMPANY DIVISIONS -->
-    <section class="christmas-divisions">
-        <div class="christmas-section-heading">
-            <span class="christmas-kicker">BEYOND THE READING SEASON</span>
-            <h2>Professional Services for <span>Authors.</span></h2>
+            <div class="section-heading">
+                <span class="section-label">WHAT WE DO</span>
+                <h2>Five Divisions. A Connected Approach.</h2>
+                <p>
+                    Explore the areas of author support available through
+                    Strategic Book Market Positioning.
+                </p>
+            </div>
+
+            <div class="division-grid">
+
+                <article class="division-card">
+                    <img class="division-image" src="{{ url_for('static', filename='images/market-research.jpg') }}" alt="Book market research">
+                    <span class="division-number">01</span>
+                    <h3>Book Market Research &amp; Positioning</h3>
+                    <p>
+                        Explore comparable books, reader audiences,
+                        market context and positioning opportunities
+                        relevant to your project.
+                    </p>
+                    <a href="/services" class="card-link">Explore Division →</a>
+                </article>
+
+                <article class="division-card">
+                    <img class="division-image" src="{{ url_for('static', filename='images/featured-woman.jpg') }}" alt="Author branding">
+                    <span class="division-number">02</span>
+                    <h3>Author Branding &amp; Media Services</h3>
+                    <p>
+                        Develop a clearer author identity through
+                        professional biographies, media materials
+                        and brand presentation.
+                    </p>
+                    <a href="/services" class="card-link">Explore Division →</a>
+                </article>
+
+                <article class="division-card">
+                    <img class="division-image" src="{{ url_for('static', filename='images/book-mockup.jpg') }}" alt="Book presentation">
+                    <span class="division-number">03</span>
+                    <h3>Book Content &amp; Presentation</h3>
+                    <p>
+                        Strengthen the way a book is introduced through
+                        descriptions, presentation materials and
+                        reader-facing content.
+                    </p>
+                    <a href="/services" class="card-link">Explore Division →</a>
+                </article>
+
+                <article class="division-card">
+                    <img class="division-image" src="{{ url_for('static', filename='images/author-working.jpg') }}" alt="Author working at a desk">
+                    <span class="division-number">04</span>
+                    <h3>Author Digital Presence</h3>
+                    <p>
+                        Improve professional online presentation through
+                        author websites, landing pages, digital profiles
+                        and portfolio development.
+                    </p>
+                    <a href="/services" class="card-link">Explore Division →</a>
+                </article>
+
+                <article class="division-card division-card-featured">
+                    <img class="division-image" src="{{ url_for('static', filename='images/reader-books.jpg') }}" alt="Books for readers">
+                    <span class="division-number">05</span>
+                    <h3>Author Visibility &amp; Discovery Strategy</h3>
+                    <p>
+                        Explore reader engagement, publicity opportunities,
+                        social promotion, launch campaigns and suitable
+                        book discovery channels.
+                    </p>
+                    <a href="/services" class="card-link">Explore Division →</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="home-approach">
+        <div class="container approach-grid">
+
+            <div class="approach-heading">
+                <span class="section-label">OUR APPROACH</span>
+                <h2>Thoughtful Work Begins With Understanding the Book.</h2>
+                <p>
+                    We believe recommendations should reflect the
+                    individual project rather than rely on a
+                    one-size-fits-all formula.
+                </p>
+                <a href="/why-us" class="primary-link">Why Choose Us →</a>
+            </div>
+
+            <div class="approach-points">
+
+                <div class="approach-point">
+                    <span>01</span>
+                    <div>
+                        <h3>Understand Before Recommending</h3>
+                        <p>
+                            We begin by learning about the book, its
+                            purpose and the author's priorities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="approach-point">
+                    <span>02</span>
+                    <div>
+                        <h3>Consider the Individual Project</h3>
+                        <p>
+                            Different books and authors may need
+                            different forms of support.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="approach-point">
+                    <span>03</span>
+                    <div>
+                        <h3>Keep the Work Clear</h3>
+                        <p>
+                            We aim to explain proposed work, deliverables
+                            and expectations before a project begins.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="approach-point">
+                    <span>04</span>
+                    <div>
+                        <h3>Focus on Practical Direction</h3>
+                        <p>
+                            Our aim is to provide considered support
+                            and useful next steps for each project.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="home-process">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">HOW WE WORK</span>
+                <h2>A Clear Process From the First Conversation.</h2>
+                <p>
+                    Every project starts with a conversation about
+                    your book and the support you are looking for.
+                </p>
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-card">
+                    <span>01</span>
+                    <h3>Introduce Your Book</h3>
+                    <p>
+                        Tell us about your book, your goals and
+                        the areas where you need support.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <span>02</span>
+                    <h3>Project Review</h3>
+                    <p>
+                        We review your enquiry and consider the
+                        services that may be relevant.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <span>03</span>
+                    <h3>Discuss the Scope</h3>
+                    <p>
+                        We discuss the proposed work, deliverables,
+                        terms and expectations.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <span>04</span>
+                    <h3>Begin by Agreement</h3>
+                    <p>
+                        Work begins once the project scope and
+                        arrangements have been agreed.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="process-bottom">
+                <a href="/process" class="text-link">Learn More About Our Process →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="home-founder">
+        <div class="container founder-grid">
+
+            <div class="founder-monogram" aria-hidden="true">
+                <span>EP</span>
+                <small>THE PERSON BEHIND THE VISION</small>
+            </div>
+
+            <div class="founder-copy">
+                <span class="section-label">MEET THE FOUNDER</span>
+                <h2>Egbinola Precious</h2>
+                <h3>Founder &amp; Director</h3>
+
+                <p>
+                    Strategic Book Market Positioning was established
+                    to bring together different areas of author support
+                    under one online company.
+                </p>
+
+                <p>
+                    Precious is also involved in literary communities,
+                    serving as a moderator with Legacy Book Club Connect
+                    and Authors Tables.
+                </p>
+
+                <a href="/egbinola-precious" class="text-link">Meet the Founder →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="home-final-cta">
+        <div class="container final-cta-content">
+            <span class="section-label">YOUR BOOK. YOUR NEXT STEP.</span>
+            <h2>Your Book Deserves Thoughtful Positioning.</h2>
             <p>
-                Strategic Book Market Positioning is a fully online author
-                services company supporting authors through research,
-                presentation, digital presence and discovery.
+                Tell us about your book and what you hope to achieve.
+                We'll be glad to learn more about your project.
             </p>
+            <a href="/get-started" class="light-link">Introduce Your Book →</a>
         </div>
-
-        <div class="christmas-division-grid">
-            <article class="christmas-division-card">
-                <span>01</span>
-                <h3>Book Market Research &amp; Positioning</h3>
-                <p>
-                    Amazon category and subcategory research, keyword research,
-                    competitor analysis, strategic positioning, reader
-                    discoverability research and market opportunity analysis.
-                </p>
-            </article>
-
-            <article class="christmas-division-card">
-                <span>02</span>
-                <h3>Author Branding &amp; Media Services</h3>
-                <p>
-                    Personalised author media kits, biography development,
-                    professional author profiles, book portfolios and
-                    author brand presentation.
-                </p>
-            </article>
-
-            <article class="christmas-division-card">
-                <span>03</span>
-                <h3>Book Content &amp; Presentation</h3>
-                <p>
-                    Book description review, blurb development, presentation
-                    review, manuscript formatting and ebook and paperback
-                    presentation.
-                </p>
-            </article>
-
-            <article class="christmas-division-card">
-                <span>04</span>
-                <h3>Author Digital Presence</h3>
-                <p>
-                    Author websites, landing pages, social media profile
-                    setup, digital portfolios and online author profiles.
-                </p>
-            </article>
-
-            <article class="christmas-division-card">
-                <span>05</span>
-                <h3>Author Visibility &amp; Discovery Strategy</h3>
-                <p>
-                    Book discovery initiatives, reader engagement,
-                    author-to-reader outreach, reading campaigns and
-                    reader community development.
-                </p>
-            </article>
-        </div>
-
-        <div class="divisions-bottom-link">
-            <a href="/services" class="christmas-outline-button">
-                View All Our Services →
-            </a>
-        </div>
-    </section>
-
-
-    <!-- FINAL CALL TO ACTION -->
-    <section class="christmas-final-cta">
-        <span class="christmas-kicker">YOUR NEXT CHAPTER STARTS HERE</span>
-        <h2>Have a Book Project in Mind?</h2>
-        <p>
-            Explore our professional author services and tell us what
-            you would like support with.
-        </p>
-        <a href="/get-started" class="christmas-button light-button">
-            Work With Us →
-        </a>
     </section>
 
 </main>
-
 
 <footer class="site-footer">
     <div class="container footer-layout">
@@ -420,5 +407,6 @@
 </footer>
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
 </html>

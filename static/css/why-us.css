@@ -1,0 +1,366 @@
+/* =========================================
+   WHY CHOOSE US - PREMIUM EDITORIAL DESIGN
+========================================= */
+
+.christmas-why {
+    --why-navy: #17243B;
+    --why-ivory: #F7F3EA;
+    --why-gold: #C5A46D;
+    --why-charcoal: #30343B;
+    background: var(--why-ivory);
+    color: var(--why-charcoal);
+}
+
+/* HEADER */
+.site-header .nav-container .logo {
+    color: #17243B !important;
+}
+
+.site-header .main-nav a:not(.header-btn) {
+    color: #30343B;
+}
+
+.site-header .main-nav a.active {
+    color: #17243B;
+    border-color: #C5A46D;
+}
+
+.site-header .main-nav .header-btn {
+    background: #17243B !important;
+    color: #FFFFFF !important;
+    border-color: #17243B !important;
+}
+
+/* HERO */
+.christmas-why .why-hero {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    background:
+        linear-gradient(90deg, rgba(23,36,59,.94), rgba(23,36,59,.68)),
+        url("../images/reader-books.jpg") center/cover no-repeat;
+}
+
+.christmas-why .why-hero-content {
+    max-width: 850px;
+}
+
+.christmas-why .why-hero .section-label,
+.christmas-why .why-cta .section-label {
+    color: #C5A46D;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+}
+
+.christmas-why .why-hero h1 {
+    color: #FFFFFF;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.16;
+}
+
+.christmas-why .why-hero h1 span {
+    color: #E5D2AD;
+}
+
+.christmas-why .why-hero p {
+    max-width: 700px;
+    color: #F0F1F3;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* INTRODUCTION */
+.christmas-why .why-intro {
+    padding: 90px 0;
+    background: #F7F3EA;
+}
+
+.christmas-why .why-intro-grid {
+    max-width: 1150px;
+    gap: 65px;
+}
+
+.christmas-why .why-intro .section-label,
+.christmas-why .why-heading .section-label,
+.christmas-why .why-commitment .section-label {
+    color: #8A6D3B;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.christmas-why .why-intro-grid h2,
+.christmas-why .why-heading h2,
+.christmas-why .why-commitment-content h2 {
+    color: #17243B;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.25;
+}
+
+.christmas-why .why-intro-grid p,
+.christmas-why .why-heading > p {
+    color: #30343B;
+    line-height: 1.9;
+}
+
+/* SIX PRINCIPLES */
+.christmas-why .why-difference {
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+
+.christmas-why .why-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.christmas-why .why-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.christmas-why .why-card {
+    position: relative;
+    padding: 35px 28px;
+    background: #F7F3EA;
+    border: 1px solid #E8E1D5;
+    border-top: 3px solid #C5A46D;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(23,36,59,.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.christmas-why .why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(23,36,59,.11);
+}
+
+.christmas-why .why-card-number {
+    color: #C5A46D;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.christmas-why .why-card-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px 0;
+    background: #17243B;
+    color: #C5A46D;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+.christmas-why .why-card h3 {
+    color: #17243B;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.christmas-why .why-card p {
+    color: #30343B;
+    line-height: 1.85;
+}
+
+.christmas-why .why-card-footer {
+    display: block;
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid #DCD2C3;
+    color: #8A6D3B;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* COMMITMENT */
+.christmas-why .why-commitment {
+    padding: 100px 0;
+    background: #F7F3EA;
+}
+
+.christmas-why .why-commitment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.christmas-why .why-commitment-image {
+    padding: 12px;
+    background: #FFFFFF;
+    border: 1px solid #E8E1D5;
+    box-shadow: 0 15px 40px rgba(23,36,59,.10);
+}
+
+.christmas-why .why-commitment-image img {
+    display: block;
+    width: 100%;
+    min-height: 420px;
+    object-fit: cover;
+}
+
+.christmas-why .why-commitment-content > p {
+    color: #30343B;
+    line-height: 1.9;
+}
+
+/* BUTTONS */
+.christmas-why .why-hero .btn,
+.christmas-why .why-commitment .btn,
+.christmas-why .why-cta .btn {
+    display: inline-block;
+    padding: 15px 26px;
+    background: #17243B;
+    color: #FFFFFF;
+    border: 1px solid #C5A46D;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.christmas-why .why-hero .btn:hover,
+.christmas-why .why-commitment .btn:hover,
+.christmas-why .why-cta .btn:hover {
+    background: #C5A46D;
+    color: #17243B;
+}
+
+/* FINAL CTA */
+.christmas-why .why-cta {
+    padding: 100px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(23,36,59,.94), rgba(23,36,59,.94)),
+        url("../images/book-collection.jpg") center/cover no-repeat;
+}
+
+.christmas-why .why-cta-content {
+    max-width: 780px;
+    margin: auto;
+}
+
+.christmas-why .why-cta h2 {
+    color: #FFFFFF;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.25;
+}
+
+.christmas-why .why-cta p {
+    color: #F0F1F3;
+    line-height: 1.9;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #17243B !important;
+}
+
+.site-footer,
+.site-footer p,
+.site-footer h3,
+.site-footer a,
+.site-footer .copyright {
+    color: #F7F3EA !important;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 850px) {
+    .site-header .nav-container {
+        min-height: 76px;
+    }
+
+    .site-header .menu-toggle {
+        display: block;
+        margin-left: auto;
+        color: #17243B !important;
+        font-size: 28px;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .site-header .main-nav {
+        z-index: 9999;
+    }
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 900px) {
+    .christmas-why .why-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .christmas-why .why-intro-grid,
+    .christmas-why .why-commitment-grid {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .christmas-why .why-hero {
+        min-height: 500px;
+        padding: 75px 7%;
+        background-position: 60% center;
+    }
+
+    .christmas-why .why-hero h1 {
+        font-size: 37px;
+    }
+
+    .christmas-why .why-hero p {
+        font-size: 15px;
+    }
+
+    .christmas-why .why-intro,
+    .christmas-why .why-difference,
+    .christmas-why .why-commitment {
+        padding: 65px 0;
+    }
+
+    .christmas-why .why-intro-grid,
+    .christmas-why .why-commitment-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .christmas-why .why-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .christmas-why .why-card {
+        padding: 28px 23px;
+    }
+
+    .christmas-why .why-commitment-image img {
+        min-height: 300px;
+    }
+
+    .christmas-why .why-cta {
+        padding: 70px 7%;
+    }
+}
+
+/* REMOVE DECORATIVE FRAME BEHIND WOMAN'S IMAGE */
+.christmas-why .why-commitment-image {
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* REMOVE GOLD DECORATIVE SHAPE BEHIND COMMITMENT IMAGE */
+.christmas-why .why-commitment-image::after {
+    content: none !important;
+    display: none !important;
+}

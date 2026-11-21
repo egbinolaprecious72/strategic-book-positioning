@@ -1,0 +1,217 @@
+/* STRATEGIC BOOK MARKET POSITIONING - ABOUT PAGE */
+
+.christmas-about {
+    --about-navy: #17243B;
+    --about-ivory: #F7F3EA;
+    --about-gold: #C5A46D;
+    --about-charcoal: #30343B;
+    color: var(--about-charcoal);
+}
+
+.christmas-about-hero {
+    background:
+        linear-gradient(rgba(23, 36, 59, .82), rgba(23, 36, 59, .78)),
+        url("../images/author-working.jpg") center 45% / cover no-repeat;
+}
+
+.christmas-about-hero-overlay {
+    background: transparent;
+}
+
+.christmas-about-hero .section-label,
+.christmas-about-belief .section-label,
+.christmas-about-cta .section-label {
+    color: var(--about-gold);
+}
+
+.christmas-about .btn {
+    background: var(--about-gold);
+    color: var(--about-navy);
+    border-color: var(--about-gold);
+}
+
+.christmas-about .btn:hover {
+    background: var(--about-ivory);
+    border-color: var(--about-ivory);
+    color: var(--about-navy);
+}
+
+.christmas-about-intro,
+.christmas-about-discovery {
+    background: var(--about-ivory);
+}
+
+.christmas-about-image img {
+    box-shadow: 12px 12px 0 var(--about-gold);
+}
+
+.christmas-about-image .image-caption {
+    color: var(--about-navy);
+}
+
+.christmas-about-copy h2,
+.christmas-about-discovery-copy h2,
+.commitment-copy h2,
+.christmas-about-heading h2 {
+    color: var(--about-navy);
+}
+
+.christmas-about-copy p,
+.christmas-about-discovery-copy p,
+.commitment-copy p,
+.christmas-about-heading p {
+    color: var(--about-charcoal);
+}
+
+.christmas-about-belief {
+    background:
+        linear-gradient(rgba(23, 36, 59, .91), rgba(23, 36, 59, .91)),
+        url("../images/reader-books.jpg") center / cover no-repeat;
+}
+
+.christmas-about-belief h2,
+.christmas-about-belief p {
+    color: #fff;
+}
+
+.belief-decoration {
+    color: var(--about-gold);
+}
+
+.christmas-about-principles .principle-card {
+    background: var(--about-ivory);
+    border-top-color: var(--about-gold);
+    box-shadow: 0 10px 30px rgba(23, 36, 59, .07);
+}
+
+.christmas-about-principles .featured-principle {
+    background: #fff;
+    border-top-color: var(--about-navy);
+}
+
+.christmas-about-principles .principle-number,
+.christmas-about-principles .principle-card h3 {
+    color: var(--about-navy);
+}
+
+.christmas-about-principles .principle-mark,
+.christmas-about-principles .principle-line {
+    color: var(--about-gold);
+    background-color: var(--about-gold);
+}
+
+.christmas-about-principles .principle-tag {
+    color: var(--about-navy);
+}
+
+.christmas-about-principles .principle-footer {
+    color: #8A6D3B;
+}
+
+.christmas-about-discovery-image img {
+    border-color: #fff;
+    box-shadow: 0 15px 35px rgba(23, 36, 59, .12);
+}
+
+.christmas-about-commitment {
+    background: #fff;
+}
+
+.commitment-image img {
+    border-bottom-color: var(--about-gold);
+}
+
+.christmas-about-cta {
+    background:
+        linear-gradient(rgba(23, 36, 59, .91), rgba(23, 36, 59, .91)),
+        url("../images/featured-woman.jpg") center / cover no-repeat;
+}
+
+.christmas-about-cta h2,
+.christmas-about-cta p {
+    color: #fff;
+}
+
+.christmas-about-cta .btn {
+    background: var(--about-gold);
+    color: var(--about-navy);
+    border-color: var(--about-gold);
+}
+
+.christmas-about-cta .btn:hover {
+    background: var(--about-ivory);
+    border-color: var(--about-ivory);
+}
+
+@media (max-width: 900px) {
+    .christmas-about-intro-grid,
+    .christmas-about-discovery-grid,
+    .christmas-about-commitment-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .christmas-about-hero {
+        background-position: 60% center;
+    }
+}
+
+/* FINAL ABOUT PAGE BRAND CONSISTENCY */
+
+.site-header .nav-container .logo {
+    color: #17243B !important;
+}
+
+.site-header .main-nav a:not(.header-btn) {
+    color: #30343B;
+}
+
+.site-header .main-nav a.active {
+    color: #17243B;
+    border-color: #C5A46D;
+}
+
+.site-header .main-nav .header-btn {
+    background: #17243B !important;
+    color: #FFFFFF !important;
+    border-color: #17243B !important;
+}
+
+.site-footer {
+    background: #17243B !important;
+}
+
+.site-footer,
+.site-footer p,
+.site-footer h3,
+.site-footer a,
+.site-footer .copyright {
+    color: #F7F3EA !important;
+}
+
+.christmas-about .section-label {
+    color: #8A6D3B;
+}
+
+.christmas-about-hero .section-label,
+.christmas-about-belief .section-label,
+.christmas-about-cta .section-label {
+    color: #C5A46D;
+}
+
+.christmas-about-principles .principle-mark {
+    background: transparent !important;
+    color: #C5A46D !important;
+}
+
+.christmas-about-principles .principle-line {
+    background: #C5A46D !important;
+}
+
+.christmas-about-belief {
+    background:
+        linear-gradient(rgba(23, 36, 59, .91), rgba(23, 36, 59, .91)),
+        url("../images/book-collection.jpg") center / cover no-repeat;
+}

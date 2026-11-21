@@ -1,0 +1,456 @@
+/* STRATEGIC BOOK MARKET POSITIONING — SERVICES PAGE */
+
+.christmas-divisions {
+    --division-navy: #17243B;
+    --division-ivory: #F7F3EA;
+    --division-gold: #C5A46D;
+    --division-text: #30343B;
+    color: var(--division-text);
+    background: var(--division-ivory);
+}
+
+.christmas-divisions .section-label {
+    color: #8A6D3B;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.divisions-christmas-hero {
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 8%;
+    background:
+        linear-gradient(90deg, rgba(23,36,59,.94), rgba(23,36,59,.67)),
+        url("../images/market-research.jpg") center / cover no-repeat;
+}
+
+.divisions-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(23,36,59,.2), transparent);
+}
+
+.divisions-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 790px;
+    color: white;
+}
+
+.divisions-hero-content .section-label,
+.divisions-reading-copy .section-label,
+.divisions-new-year .section-label {
+    color: var(--division-gold);
+}
+
+.divisions-hero-content h1 {
+    color: white;
+    font-size: clamp(38px, 5.5vw, 65px);
+    line-height: 1.12;
+    margin: 22px 0;
+}
+
+.divisions-hero-content p {
+    color: #F7F3EA;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.christmas-divisions .btn-primary {
+    display: inline-block;
+    padding: 15px 25px;
+    background: var(--division-navy);
+    border: 1px solid var(--division-gold);
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.christmas-divisions .btn-primary:hover {
+    background: #263957;
+    transform: translateY(-3px);
+}
+
+.divisions-season-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    padding: 100px 8%;
+    background: white;
+}
+
+.divisions-intro-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgba(23,36,59,.13);
+}
+
+.divisions-intro-copy h2,
+.christmas-division-heading h2 {
+    color: var(--division-navy);
+    line-height: 1.25;
+}
+
+.divisions-intro-copy h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    margin: 18px 0;
+}
+
+.divisions-intro-copy p,
+.christmas-division-heading p {
+    color: #50545B;
+    line-height: 1.95;
+    margin-bottom: 16px;
+}
+
+.divisions-text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--division-navy);
+    font-weight: 800;
+    text-decoration: none;
+    border-bottom: 1px solid var(--division-gold);
+    padding-bottom: 5px;
+}
+
+.christmas-division-section {
+    padding: 85px 8%;
+    background: var(--division-ivory);
+}
+
+.christmas-division-section.division-alternate {
+    background: white;
+}
+
+.christmas-division-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 42px;
+}
+
+.christmas-division-number {
+    flex: 0 0 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--division-navy);
+    color: var(--division-gold);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.christmas-division-heading > div {
+    flex: 1;
+}
+
+.christmas-division-heading h2 {
+    font-size: clamp(27px, 3.5vw, 39px);
+    margin: 10px 0 15px;
+}
+
+.christmas-division-heading p {
+    max-width: 850px;
+}
+
+.christmas-division-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.christmas-service-card {
+    min-height: 205px;
+    padding: 29px 25px;
+    background: white;
+    border: 1px solid rgba(23,36,59,.12);
+    border-top: 3px solid var(--division-gold);
+    border-radius: 5px;
+    box-shadow: 0 8px 24px rgba(23,36,59,.045);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.division-alternate .christmas-service-card {
+    background: var(--division-ivory);
+}
+
+.christmas-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(23,36,59,.11);
+}
+
+.christmas-service-card > span {
+    display: inline-block;
+    padding: 6px 11px;
+    margin-bottom: 15px;
+    background: rgba(197,164,109,.23);
+    color: var(--division-navy);
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.christmas-service-card h3 {
+    color: var(--division-navy);
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 12px;
+}
+
+.christmas-service-card p {
+    color: #555A62;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.divisions-reading-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: var(--division-navy);
+    color: white;
+}
+
+.divisions-reading-image {
+    height: 440px;
+}
+
+.divisions-reading-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divisions-reading-copy {
+    padding: 65px 9%;
+}
+
+.divisions-reading-copy h2,
+.divisions-new-year h2 {
+    color: white;
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.divisions-reading-copy p,
+.divisions-new-year p {
+    color: #F1EEE7;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.divisions-project-note {
+    padding: 85px 8%;
+    text-align: center;
+    background: white;
+}
+
+.divisions-project-note h2,
+.divisions-final-cta h2 {
+    color: var(--division-navy);
+    font-size: clamp(29px, 4vw, 40px);
+    margin: 18px 0;
+}
+
+.divisions-project-note p,
+.divisions-final-cta p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555A62;
+    line-height: 1.95;
+}
+
+.divisions-new-year {
+    padding: 90px 8%;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(23,36,59,.94), rgba(23,36,59,.80)),
+        url("../images/author-working.jpg") center / cover no-repeat;
+}
+
+.divisions-new-year > div {
+    max-width: 800px;
+}
+
+.divisions-new-year h2 {
+    font-size: clamp(31px, 4.5vw, 46px);
+}
+
+.divisions-final-cta {
+    padding: 90px 8%;
+    text-align: center;
+    background: var(--division-ivory);
+}
+
+.divisions-final-cta p {
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.site-header .nav-container .logo {
+    color: var(--division-navy) !important;
+}
+
+.site-header .main-nav a:not(.header-btn) {
+    color: var(--division-text);
+}
+
+.site-header .main-nav a.active {
+    color: var(--division-navy);
+    border-color: var(--division-gold);
+}
+
+.site-header .main-nav .header-btn {
+    background: var(--division-navy) !important;
+    color: white !important;
+    border-color: var(--division-navy) !important;
+}
+
+.site-footer {
+    background: var(--division-navy) !important;
+}
+
+.site-footer,
+.site-footer p,
+.site-footer h3,
+.site-footer a,
+.site-footer .copyright {
+    color: var(--division-ivory) !important;
+}
+
+@media (max-width: 900px) {
+    .christmas-division-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .divisions-season-intro {
+        gap: 35px;
+        padding: 75px 6%;
+    }
+
+    .christmas-division-section {
+        padding: 70px 6%;
+    }
+}
+
+@media (max-width: 600px) {
+    .divisions-christmas-hero {
+        min-height: 520px;
+        padding: 75px 7%;
+        background-position: 57% center;
+    }
+
+    .divisions-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .divisions-hero-content p {
+        font-size: 15px;
+    }
+
+    .divisions-season-intro,
+    .divisions-reading-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .divisions-season-intro {
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .divisions-intro-image img {
+        height: 270px;
+    }
+
+    .christmas-division-section {
+        padding: 60px 7%;
+    }
+
+    .christmas-division-heading {
+        gap: 15px;
+    }
+
+    .christmas-division-number {
+        flex-basis: 55px;
+        height: 55px;
+        font-size: 19px;
+    }
+
+    .christmas-division-heading h2 {
+        font-size: 26px;
+    }
+
+    .christmas-division-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .christmas-service-card {
+        min-height: auto;
+    }
+
+    .divisions-reading-image {
+        height: 280px;
+    }
+
+    .divisions-reading-copy {
+        padding: 55px 7%;
+    }
+
+    .divisions-project-note,
+    .divisions-final-cta {
+        padding: 65px 7%;
+    }
+
+    .divisions-new-year {
+        padding: 70px 7%;
+    }
+}
+
+/* SERVICES PAGE - MOBILE NAVIGATION REFINEMENT */
+@media (max-width: 850px) {
+    .site-header .nav-container {
+        min-height: 76px;
+    }
+
+    .site-header .menu-toggle {
+        display: block;
+        margin-left: auto;
+        color: #17243B !important;
+        font-size: 28px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .site-header .main-nav {
+        z-index: 9999;
+    }
+
+    .site-header .main-nav > a:not(.header-btn) {
+        font-size: 15px !important;
+        padding: 15px 0;
+        color: #30343B;
+    }
+
+    .site-header .main-nav .header-btn {
+        font-size: 14px !important;
+    }
+}
