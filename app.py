@@ -56,7 +56,7 @@ def send_enquiry_emails_in_background(
     def send_emails():
         try:
             script_url = os.getenv("GOOGLE_SCRIPT_URL")
-            secret = os.getenv("EMAIL_WEBHOOK_SECRET")
+            secret = os.getenv("EMAIL_WEBHOOK_SECRET", "").strip()
             admin_email = os.getenv("NOTIFICATION_EMAIL")
 
             if not all([script_url, secret, admin_email]):
