@@ -145,6 +145,11 @@ def our_work():
     return render_template("our-work.html")
 
 
+@app.route("/featured-authors")
+def featured_authors():
+    return render_template("featured-authors.html")
+
+
 @app.route("/process")
 def process():
     return render_template("process.html")

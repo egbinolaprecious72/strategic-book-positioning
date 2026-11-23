@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Authors | Strategic Book Market Positioning</title>
+    <meta name="description" content="Discover selected authors and their books, and explore authors whose books we have supported through Strategic Book Market Positioning.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/featured-authors.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="/" class="logo">
+            <span class="logo-icon">◈</span>
+            <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="main-nav">
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+            <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}">About</a>
+            <a href="/services" class="{{ 'active' if request.path == '/services' else '' }}">Our Divisions</a>
+            <a href="/our-work" class="{{ 'active' if request.path == '/our-work' else '' }}">Our Work</a>
+            <a href="/featured-authors" class="{{ 'active' if request.path == '/featured-authors' else '' }}">Featured Authors</a>
+            <a href="/process" class="{{ 'active' if request.path == '/process' else '' }}">Our Process</a>
+            <a href="/why-us" class="{{ 'active' if request.path == '/why-us' else '' }}">Why Choose Us</a>
+            <a href="/insights" class="{{ 'active' if request.path == '/insights' else '' }}">Insights</a>
+            <a href="/get-started" class="{{ 'active' if request.path == '/get-started' else '' }}">Get Started</a>
+            <a href="/get-started" class="header-btn">Work With Us →</a>
+        </nav>
+    </div>
+</header>
+
+<main class="featured-authors-page">
+    <section class="authors-hero">
+        <div class="authors-hero-inner">
+            <span class="authors-eyebrow">DISCOVER. READ. CONNECT.</span>
+            <h1>Stories Worth Discovering.<br><span>Authors Worth Knowing.</span></h1>
+            <p>Explore a curated selection of authors and books across different genres, and discover the creative work behind each title.</p>
+            <a href="#featured-selection" class="authors-button">Explore Featured Authors ↓</a>
+        </div>
+    </section>
+
+
+    <section class="authors-intro container" id="featured-selection">
+        <span class="authors-label">OUR AUTHOR SPOTLIGHT</span>
+        <h2>Featured Authors</h2>
+        <p class="authors-description">
+            Discover sixty authors and their books across a range of genres,
+            ideas and reading experiences.
+        </p>
+
+        <div class="authors-grid">
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=Americanah+Chimamanda+Ngozi+Adichie" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780307455925-L.jpg" alt="Americanah book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Literary Fiction</span>
+                    <h3>Americanah</h3>
+                    <p class="author-name">Chimamanda Ngozi Adichie</p>
+                    <p>A compelling story of love, identity, migration and the search for belonging across Nigeria, America and Britain.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Americanah+Chimamanda+Ngozi+Adichie" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=Atomic+Habits+James+Clear" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="Atomic Habits book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Self-Help</span>
+                    <h3>Atomic Habits</h3>
+                    <p class="author-name">James Clear</p>
+                    <p>A practical guide to building better habits, making small improvements and creating lasting personal change.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Atomic+Habits+James+Clear" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=Becoming+Michelle+Obama" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781524763138-L.jpg" alt="Becoming book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Memoir</span>
+                    <h3>Becoming</h3>
+                    <p class="author-name">Michelle Obama</p>
+                    <p>An intimate account of the experiences, relationships and defining moments that shaped the author's life.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Becoming+Michelle+Obama" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=The+Housemaid+Freida+McFadden" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781538742570-L.jpg" alt="The Housemaid book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Psychological Thriller</span>
+                    <h3>The Housemaid</h3>
+                    <p class="author-name">Freida McFadden</p>
+                    <p>A suspenseful story of a woman working for a wealthy family, where unsettling secrets begin to emerge.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Housemaid+Freida+McFadden" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=The+Hobbit+J+R+R+Tolkien" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg" alt="The Hobbit book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Fantasy</span>
+                    <h3>The Hobbit</h3>
+                    <p class="author-name">J.R.R. Tolkien</p>
+                    <p>A classic adventure following Bilbo Baggins on an unexpected journey filled with danger, friendship and discovery.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Hobbit+J+R+R+Tolkien" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=Project+Hail+Mary+Andy+Weir" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780593135204-L.jpg" alt="Project Hail Mary book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Science Fiction</span>
+                    <h3>Project Hail Mary</h3>
+                    <p class="author-name">Andy Weir</p>
+                    <p>A science-driven space adventure about survival, discovery and an extraordinary mission to save humanity.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Project+Hail+Mary+Andy+Weir" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=The+Book+Thief+Markus+Zusak" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg" alt="The Book Thief book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Historical Fiction</span>
+                    <h3>The Book Thief</h3>
+                    <p class="author-name">Markus Zusak</p>
+                    <p>A moving story set in Nazi Germany, exploring the power of words, courage and human connection.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Book+Thief+Markus+Zusak" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=The+7+Habits+of+Highly+Effective+People+Stephen+Covey" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781982137274-L.jpg" alt="The 7 Habits of Highly Effective People book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Leadership & Business</span>
+                    <h3>The 7 Habits of Highly Effective People</h3>
+                    <p class="author-name">Stephen R. Covey</p>
+                    <p>A widely read guide to personal effectiveness, purposeful action and principles-based leadership.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+7+Habits+of+Highly+Effective+People+Stephen+Covey" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=The+Silent+Patient+Alex+Michaelides" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg" alt="The Silent Patient book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Mystery & Thriller</span>
+                    <h3>The Silent Patient</h3>
+                    <p class="author-name">Alex Michaelides</p>
+                    <p>A psychological mystery about a painter who stops speaking after a shocking act of violence.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Silent+Patient+Alex+Michaelides" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+            <article class="author-card">
+                <a href="https://www.amazon.com/s?k=The+Very+Hungry+Caterpillar+Eric+Carle" target="_blank" rel="noopener noreferrer">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780399226908-L.jpg" alt="The Very Hungry Caterpillar book cover" loading="lazy">
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Children's Literature</span>
+                    <h3>The Very Hungry Caterpillar</h3>
+                    <p class="author-name">Eric Carle</p>
+                    <p>A colourful picture-book classic that introduces young readers to counting, food and the life cycle of a butterfly.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Very+Hungry+Caterpillar+Eric+Carle" target="_blank" rel="noopener noreferrer">Explore Book →</a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Purple+Hibiscus+Chimamanda+Ngozi+Adichie"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Purple Hibiscus">
+                    <span>FEATURED BOOK</span>
+                    <strong>Purple Hibiscus</strong>
+                    <small>Chimamanda Ngozi Adichie</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">African Literary Fiction</span>
+                    <h3>Purple Hibiscus</h3>
+                    <p class="author-name">Chimamanda Ngozi Adichie</p>
+                    <p>A powerful family story exploring faith, freedom, identity and life in Nigeria.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Purple+Hibiscus+Chimamanda+Ngozi+Adichie"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Things+Fall+Apart+Chinua+Achebe"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Things Fall Apart">
+                    <span>FEATURED BOOK</span>
+                    <strong>Things Fall Apart</strong>
+                    <small>Chinua Achebe</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">African Literature</span>
+                    <h3>Things Fall Apart</h3>
+                    <p class="author-name">Chinua Achebe</p>
+                    <p>A landmark novel exploring Igbo society, tradition and colonial disruption.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Things+Fall+Apart+Chinua+Achebe"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Lion+and+the+Jewel+Wole+Soyinka"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Lion and the Jewel">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Lion and the Jewel</strong>
+                    <small>Wole Soyinka</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">African Drama</span>
+                    <h3>The Lion and the Jewel</h3>
+                    <p class="author-name">Wole Soyinka</p>
+                    <p>A celebrated play exploring tradition, modernity and social change.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Lion+and+the+Jewel+Wole+Soyinka"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Joys+of+Motherhood+Buchi+Emecheta"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Joys of Motherhood">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Joys of Motherhood</strong>
+                    <small>Buchi Emecheta</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">African Fiction</span>
+                    <h3>The Joys of Motherhood</h3>
+                    <p class="author-name">Buchi Emecheta</p>
+                    <p>A moving exploration of motherhood, gender expectations and women&#x27;s lives.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Joys+of+Motherhood+Buchi+Emecheta"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Freshwater+Akwaeke+Emezi"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Freshwater">
+                    <span>FEATURED BOOK</span>
+                    <strong>Freshwater</strong>
+                    <small>Akwaeke Emezi</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Literary Fiction</span>
+                    <h3>Freshwater</h3>
+                    <p class="author-name">Akwaeke Emezi</p>
+                    <p>An unconventional novel exploring identity, memory and the complexity of the self.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Freshwater+Akwaeke+Emezi"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Half+of+a+Yellow+Sun+Chimamanda+Ngozi+Adichie"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Half of a Yellow Sun">
+                    <span>FEATURED BOOK</span>
+                    <strong>Half of a Yellow Sun</strong>
+                    <small>Chimamanda Ngozi Adichie</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Historical Fiction</span>
+                    <h3>Half of a Yellow Sun</h3>
+                    <p class="author-name">Chimamanda Ngozi Adichie</p>
+                    <p>A moving account of love, family and the Nigerian Civil War.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Half+of+a+Yellow+Sun+Chimamanda+Ngozi+Adichie"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Secret+Lives+of+Baba+Segi%27s+Wives+Lola+Shoneyin"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Secret Lives of Baba Segi&#x27;s Wives">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Secret Lives of Baba Segi&#x27;s Wives</strong>
+                    <small>Lola Shoneyin</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">African Fiction</span>
+                    <h3>The Secret Lives of Baba Segi&#x27;s Wives</h3>
+                    <p class="author-name">Lola Shoneyin</p>
+                    <p>A witty and revealing story of family relationships and hidden truths.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Secret+Lives+of+Baba+Segi%27s+Wives+Lola+Shoneyin"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Stay+with+Me+Ayobami+Adebayo"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Stay with Me">
+                    <span>FEATURED BOOK</span>
+                    <strong>Stay with Me</strong>
+                    <small>Ayobami Adebayo</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Contemporary Fiction</span>
+                    <h3>Stay with Me</h3>
+                    <p class="author-name">Ayobami Adebayo</p>
+                    <p>A deeply emotional story about marriage, family expectations and resilience.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Stay+with+Me+Ayobami+Adebayo"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Fishermen+Chigozie+Obioma"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Fishermen">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Fishermen</strong>
+                    <small>Chigozie Obioma</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Literary Fiction</span>
+                    <h3>The Fishermen</h3>
+                    <p class="author-name">Chigozie Obioma</p>
+                    <p>Four brothers face a prophecy that changes the course of their family.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Fishermen+Chigozie+Obioma"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=An+Orchestra+of+Minorities+Chigozie+Obioma"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore An Orchestra of Minorities">
+                    <span>FEATURED BOOK</span>
+                    <strong>An Orchestra of Minorities</strong>
+                    <small>Chigozie Obioma</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Literary Fiction</span>
+                    <h3>An Orchestra of Minorities</h3>
+                    <p class="author-name">Chigozie Obioma</p>
+                    <p>A story of love, ambition and fate told through an unusual narrative voice.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=An+Orchestra+of+Minorities+Chigozie+Obioma"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=It+Ends+with+Us+Colleen+Hoover"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore It Ends with Us">
+                    <span>FEATURED BOOK</span>
+                    <strong>It Ends with Us</strong>
+                    <small>Colleen Hoover</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Contemporary Romance</span>
+                    <h3>It Ends with Us</h3>
+                    <p class="author-name">Colleen Hoover</p>
+                    <p>A relationship story examining love, difficult choices and personal strength.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=It+Ends+with+Us+Colleen+Hoover"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Notebook+Nicholas+Sparks"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Notebook">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Notebook</strong>
+                    <small>Nicholas Sparks</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Romance</span>
+                    <h3>The Notebook</h3>
+                    <p class="author-name">Nicholas Sparks</p>
+                    <p>A lasting love story about memory, devotion and the passage of time.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Notebook+Nicholas+Sparks"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Book+Lovers+Emily+Henry"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Book Lovers">
+                    <span>FEATURED BOOK</span>
+                    <strong>Book Lovers</strong>
+                    <small>Emily Henry</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Romantic Fiction</span>
+                    <h3>Book Lovers</h3>
+                    <p class="author-name">Emily Henry</p>
+                    <p>Two publishing professionals find their expectations challenged during a summer away.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Book+Lovers+Emily+Henry"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Love+Hypothesis+Ali+Hazelwood"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Love Hypothesis">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Love Hypothesis</strong>
+                    <small>Ali Hazelwood</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Romantic Comedy</span>
+                    <h3>The Love Hypothesis</h3>
+                    <p class="author-name">Ali Hazelwood</p>
+                    <p>A fake-dating arrangement complicates the lives of two academics.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Love+Hypothesis+Ali+Hazelwood"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Me+Before+You+Jojo+Moyes"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Me Before You">
+                    <span>FEATURED BOOK</span>
+                    <strong>Me Before You</strong>
+                    <small>Jojo Moyes</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Romance</span>
+                    <h3>Me Before You</h3>
+                    <p class="author-name">Jojo Moyes</p>
+                    <p>An unexpected relationship changes the lives and perspectives of two people.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Me+Before+You+Jojo+Moyes"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=A+Court+of+Thorns+and+Roses+Sarah+J.+Maas"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore A Court of Thorns and Roses">
+                    <span>FEATURED BOOK</span>
+                    <strong>A Court of Thorns and Roses</strong>
+                    <small>Sarah J. Maas</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Fantasy Romance</span>
+                    <h3>A Court of Thorns and Roses</h3>
+                    <p class="author-name">Sarah J. Maas</p>
+                    <p>A young huntress enters a dangerous magical world.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=A+Court+of+Thorns+and+Roses+Sarah+J.+Maas"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Way+of+Kings+Brandon+Sanderson"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Way of Kings">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Way of Kings</strong>
+                    <small>Brandon Sanderson</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Epic Fantasy</span>
+                    <h3>The Way of Kings</h3>
+                    <p class="author-name">Brandon Sanderson</p>
+                    <p>An expansive fantasy world shaped by war, honour and extraordinary powers.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Way+of+Kings+Brandon+Sanderson"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=A+Game+of+Thrones+George+R.+R.+Martin"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore A Game of Thrones">
+                    <span>FEATURED BOOK</span>
+                    <strong>A Game of Thrones</strong>
+                    <small>George R. R. Martin</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Epic Fantasy</span>
+                    <h3>A Game of Thrones</h3>
+                    <p class="author-name">George R. R. Martin</p>
+                    <p>Noble families compete for power in a dangerous fictional kingdom.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=A+Game+of+Thrones+George+R.+R.+Martin"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Name+of+the+Wind+Patrick+Rothfuss"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Name of the Wind">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Name of the Wind</strong>
+                    <small>Patrick Rothfuss</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Fantasy</span>
+                    <h3>The Name of the Wind</h3>
+                    <p class="author-name">Patrick Rothfuss</p>
+                    <p>A gifted young man recounts the experiences that shaped his extraordinary life.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Name+of+the+Wind+Patrick+Rothfuss"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Lies+of+the+Ajungo+Moses+Ose+Utomi"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Lies of the Ajungo">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Lies of the Ajungo</strong>
+                    <small>Moses Ose Utomi</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">African Fantasy</span>
+                    <h3>The Lies of the Ajungo</h3>
+                    <p class="author-name">Moses Ose Utomi</p>
+                    <p>A fantasy adventure drawing on themes of courage, sacrifice and community.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Lies+of+the+Ajungo+Moses+Ose+Utomi"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Gone+Girl+Gillian+Flynn"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Gone Girl">
+                    <span>FEATURED BOOK</span>
+                    <strong>Gone Girl</strong>
+                    <small>Gillian Flynn</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Psychological Thriller</span>
+                    <h3>Gone Girl</h3>
+                    <p class="author-name">Gillian Flynn</p>
+                    <p>A marriage becomes the centre of a disturbing mystery.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Gone+Girl+Gillian+Flynn"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Girl+with+the+Dragon+Tattoo+Stieg+Larsson"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Girl with the Dragon Tattoo">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Girl with the Dragon Tattoo</strong>
+                    <small>Stieg Larsson</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Crime Thriller</span>
+                    <h3>The Girl with the Dragon Tattoo</h3>
+                    <p class="author-name">Stieg Larsson</p>
+                    <p>A journalist and a skilled investigator pursue a complex family mystery.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Girl+with+the+Dragon+Tattoo+Stieg+Larsson"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Da+Vinci+Code+Dan+Brown"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Da Vinci Code">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Da Vinci Code</strong>
+                    <small>Dan Brown</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Mystery Thriller</span>
+                    <h3>The Da Vinci Code</h3>
+                    <p class="author-name">Dan Brown</p>
+                    <p>A symbolic mystery leads to a fast-moving investigation across Europe.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Da+Vinci+Code+Dan+Brown"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Silent+Corner+Dean+Koontz"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Silent Corner">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Silent Corner</strong>
+                    <small>Dean Koontz</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Suspense Thriller</span>
+                    <h3>The Silent Corner</h3>
+                    <p class="author-name">Dean Koontz</p>
+                    <p>An investigator uncovers a disturbing mystery surrounding powerful technology.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Silent+Corner+Dean+Koontz"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Guest+List+Lucy+Foley"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Guest List">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Guest List</strong>
+                    <small>Lucy Foley</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Mystery</span>
+                    <h3>The Guest List</h3>
+                    <p class="author-name">Lucy Foley</p>
+                    <p>A wedding celebration on a remote island turns into a murder investigation.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Guest+List+Lucy+Foley"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Cuckoo%27s+Calling+Robert+Galbraith"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Cuckoo&#x27;s Calling">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Cuckoo&#x27;s Calling</strong>
+                    <small>Robert Galbraith</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Detective Fiction</span>
+                    <h3>The Cuckoo&#x27;s Calling</h3>
+                    <p class="author-name">Robert Galbraith</p>
+                    <p>A private investigator examines the suspicious death of a famous model.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Cuckoo%27s+Calling+Robert+Galbraith"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Daring+Greatly+Bren%C3%A9+Brown"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Daring Greatly">
+                    <span>FEATURED BOOK</span>
+                    <strong>Daring Greatly</strong>
+                    <small>Brené Brown</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Personal Development</span>
+                    <h3>Daring Greatly</h3>
+                    <p class="author-name">Brené Brown</p>
+                    <p>An exploration of vulnerability, courage and wholehearted living.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Daring+Greatly+Bren%C3%A9+Brown"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=How+to+Win+Friends+and+Influence+People+Dale+Carnegie"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore How to Win Friends and Influence People">
+                    <span>FEATURED BOOK</span>
+                    <strong>How to Win Friends and Influence People</strong>
+                    <small>Dale Carnegie</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Personal Development</span>
+                    <h3>How to Win Friends and Influence People</h3>
+                    <p class="author-name">Dale Carnegie</p>
+                    <p>Practical principles for communication and building stronger relationships.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=How+to+Win+Friends+and+Influence+People+Dale+Carnegie"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+5+AM+Club+Robin+Sharma"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The 5 AM Club">
+                    <span>FEATURED BOOK</span>
+                    <strong>The 5 AM Club</strong>
+                    <small>Robin Sharma</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Self-Help</span>
+                    <h3>The 5 AM Club</h3>
+                    <p class="author-name">Robin Sharma</p>
+                    <p>A personal-development approach centred on intentional morning routines.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+5+AM+Club+Robin+Sharma"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Mindset+Carol+S.+Dweck"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Mindset">
+                    <span>FEATURED BOOK</span>
+                    <strong>Mindset</strong>
+                    <small>Carol S. Dweck</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Psychology &amp; Self-Development</span>
+                    <h3>Mindset</h3>
+                    <p class="author-name">Carol S. Dweck</p>
+                    <p>An exploration of how beliefs about ability influence learning and growth.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Mindset+Carol+S.+Dweck"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Power+of+Now+Eckhart+Tolle"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Power of Now">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Power of Now</strong>
+                    <small>Eckhart Tolle</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Personal Development</span>
+                    <h3>The Power of Now</h3>
+                    <p class="author-name">Eckhart Tolle</p>
+                    <p>A guide to awareness and living more fully in the present.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Power+of+Now+Eckhart+Tolle"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Start+with+Why+Simon+Sinek"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Start with Why">
+                    <span>FEATURED BOOK</span>
+                    <strong>Start with Why</strong>
+                    <small>Simon Sinek</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Business &amp; Leadership</span>
+                    <h3>Start with Why</h3>
+                    <p class="author-name">Simon Sinek</p>
+                    <p>An exploration of how purpose can inspire people and organisations.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Start+with+Why+Simon+Sinek"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Rich+Dad+Poor+Dad+Robert+T.+Kiyosaki"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Rich Dad Poor Dad">
+                    <span>FEATURED BOOK</span>
+                    <strong>Rich Dad Poor Dad</strong>
+                    <small>Robert T. Kiyosaki</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Personal Finance</span>
+                    <h3>Rich Dad Poor Dad</h3>
+                    <p class="author-name">Robert T. Kiyosaki</p>
+                    <p>A personal-finance book contrasting different approaches to money and wealth.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Rich+Dad+Poor+Dad+Robert+T.+Kiyosaki"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Good+to+Great+Jim+Collins"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Good to Great">
+                    <span>FEATURED BOOK</span>
+                    <strong>Good to Great</strong>
+                    <small>Jim Collins</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Business Leadership</span>
+                    <h3>Good to Great</h3>
+                    <p class="author-name">Jim Collins</p>
+                    <p>A study of the characteristics that distinguish enduring high-performing companies.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Good+to+Great+Jim+Collins"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Lean+Startup+Eric+Ries"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Lean Startup">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Lean Startup</strong>
+                    <small>Eric Ries</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Entrepreneurship</span>
+                    <h3>The Lean Startup</h3>
+                    <p class="author-name">Eric Ries</p>
+                    <p>A practical approach to developing and testing business ideas.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Lean+Startup+Eric+Ries"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Leaders+Eat+Last+Simon+Sinek"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Leaders Eat Last">
+                    <span>FEATURED BOOK</span>
+                    <strong>Leaders Eat Last</strong>
+                    <small>Simon Sinek</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Leadership</span>
+                    <h3>Leaders Eat Last</h3>
+                    <p class="author-name">Simon Sinek</p>
+                    <p>An examination of trust, responsibility and the culture of effective teams.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Leaders+Eat+Last+Simon+Sinek"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Born+a+Crime+Trevor+Noah"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Born a Crime">
+                    <span>FEATURED BOOK</span>
+                    <strong>Born a Crime</strong>
+                    <small>Trevor Noah</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Memoir</span>
+                    <h3>Born a Crime</h3>
+                    <p class="author-name">Trevor Noah</p>
+                    <p>A personal account of childhood and identity during apartheid and its aftermath.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Born+a+Crime+Trevor+Noah"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Educated+Tara+Westover"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Educated">
+                    <span>FEATURED BOOK</span>
+                    <strong>Educated</strong>
+                    <small>Tara Westover</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Memoir</span>
+                    <h3>Educated</h3>
+                    <p class="author-name">Tara Westover</p>
+                    <p>A woman&#x27;s journey from an isolated upbringing towards education and independence.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Educated+Tara+Westover"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Glass+Castle+Jeannette+Walls"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Glass Castle">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Glass Castle</strong>
+                    <small>Jeannette Walls</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Memoir</span>
+                    <h3>The Glass Castle</h3>
+                    <p class="author-name">Jeannette Walls</p>
+                    <p>A memoir about an unconventional childhood and the search for stability.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Glass+Castle+Jeannette+Walls"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Long+Walk+to+Freedom+Nelson+Mandela"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Long Walk to Freedom">
+                    <span>FEATURED BOOK</span>
+                    <strong>Long Walk to Freedom</strong>
+                    <small>Nelson Mandela</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Autobiography</span>
+                    <h3>Long Walk to Freedom</h3>
+                    <p class="author-name">Nelson Mandela</p>
+                    <p>The life story of South Africa&#x27;s anti-apartheid leader and former president.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Long+Walk+to+Freedom+Nelson+Mandela"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Book+Thief+Markus+Zusak"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Book Thief">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Book Thief</strong>
+                    <small>Markus Zusak</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Historical Fiction</span>
+                    <h3>The Book Thief</h3>
+                    <p class="author-name">Markus Zusak</p>
+                    <p>A young girl&#x27;s life in Nazi Germany is shaped by books and human connection.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Book+Thief+Markus+Zusak"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=All+the+Light+We+Cannot+See+Anthony+Doerr"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore All the Light We Cannot See">
+                    <span>FEATURED BOOK</span>
+                    <strong>All the Light We Cannot See</strong>
+                    <small>Anthony Doerr</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Historical Fiction</span>
+                    <h3>All the Light We Cannot See</h3>
+                    <p class="author-name">Anthony Doerr</p>
+                    <p>Two young lives intersect during the Second World War.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=All+the+Light+We+Cannot+See+Anthony+Doerr"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Nightingale+Kristin+Hannah"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Nightingale">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Nightingale</strong>
+                    <small>Kristin Hannah</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Historical Fiction</span>
+                    <h3>The Nightingale</h3>
+                    <p class="author-name">Kristin Hannah</p>
+                    <p>Two sisters navigate courage, resistance and survival in wartime France.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Nightingale+Kristin+Hannah"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Matilda+Roald+Dahl"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Matilda">
+                    <span>FEATURED BOOK</span>
+                    <strong>Matilda</strong>
+                    <small>Roald Dahl</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Children&#x27;s Literature</span>
+                    <h3>Matilda</h3>
+                    <p class="author-name">Roald Dahl</p>
+                    <p>A gifted young girl discovers the power of intelligence and courage.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Matilda+Roald+Dahl"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Harry+Potter+and+the+Philosopher%27s+Stone+J.+K.+Rowling"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Harry Potter and the Philosopher&#x27;s Stone">
+                    <span>FEATURED BOOK</span>
+                    <strong>Harry Potter and the Philosopher&#x27;s Stone</strong>
+                    <small>J. K. Rowling</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Fantasy &amp; Children&#x27;s Fiction</span>
+                    <h3>Harry Potter and the Philosopher&#x27;s Stone</h3>
+                    <p class="author-name">J. K. Rowling</p>
+                    <p>A young boy discovers a hidden magical world and his place within it.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Harry+Potter+and+the+Philosopher%27s+Stone+J.+K.+Rowling"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Wonder+R.+J.+Palacio"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Wonder">
+                    <span>FEATURED BOOK</span>
+                    <strong>Wonder</strong>
+                    <small>R. J. Palacio</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Children&#x27;s Fiction</span>
+                    <h3>Wonder</h3>
+                    <p class="author-name">R. J. Palacio</p>
+                    <p>A boy entering school for the first time teaches those around him about kindness.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Wonder+R.+J.+Palacio"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Charlotte%27s+Web+E.+B.+White"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Charlotte&#x27;s Web">
+                    <span>FEATURED BOOK</span>
+                    <strong>Charlotte&#x27;s Web</strong>
+                    <small>E. B. White</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Children&#x27;s Literature</span>
+                    <h3>Charlotte&#x27;s Web</h3>
+                    <p class="author-name">E. B. White</p>
+                    <p>An enduring story of friendship between a pig and a remarkable spider.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Charlotte%27s+Web+E.+B.+White"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Hobbit+J.+R.+R.+Tolkien"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Hobbit">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Hobbit</strong>
+                    <small>J. R. R. Tolkien</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Fantasy</span>
+                    <h3>The Hobbit</h3>
+                    <p class="author-name">J. R. R. Tolkien</p>
+                    <p>An unexpected journey takes Bilbo Baggins into a world of adventure.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Hobbit+J.+R.+R.+Tolkien"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Dune+Frank+Herbert"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Dune">
+                    <span>FEATURED BOOK</span>
+                    <strong>Dune</strong>
+                    <small>Frank Herbert</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Science Fiction</span>
+                    <h3>Dune</h3>
+                    <p class="author-name">Frank Herbert</p>
+                    <p>A young noble becomes central to a struggle over power and a desert planet.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Dune+Frank+Herbert"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=The+Martian+Andy+Weir"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore The Martian">
+                    <span>FEATURED BOOK</span>
+                    <strong>The Martian</strong>
+                    <small>Andy Weir</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Science Fiction</span>
+                    <h3>The Martian</h3>
+                    <p class="author-name">Andy Weir</p>
+                    <p>An astronaut uses ingenuity and science to survive alone on Mars.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=The+Martian+Andy+Weir"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="author-card">
+                <a class="book-cover-placeholder" href="https://www.amazon.com/s?k=Never+Let+Me+Go+Kazuo+Ishiguro"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Explore Never Let Me Go">
+                    <span>FEATURED BOOK</span>
+                    <strong>Never Let Me Go</strong>
+                    <small>Kazuo Ishiguro</small>
+                </a>
+                <div class="author-card-content">
+                    <span class="book-genre">Literary Science Fiction</span>
+                    <h3>Never Let Me Go</h3>
+                    <p class="author-name">Kazuo Ishiguro</p>
+                    <p>A reflective novel exploring memory, friendship and what it means to be human.</p>
+                    <a class="book-link" href="https://www.amazon.com/s?k=Never+Let+Me+Go+Kazuo+Ishiguro"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore Book →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="authors-note">
+            Featured titles are selected for reader discovery. Their inclusion does not imply endorsement or business affiliation.
+        </p>
+    </section>
+    <section class="authors-cta">
+        <div class="container">
+            <span class="authors-label">YOUR BOOK DESERVES THE RIGHT POSITION</span>
+            <h2>Would You Like Your Book to Be Considered?</h2>
+            <p>If you're an author interested in strengthening your book's presentation and discoverability, we'd be glad to learn about your project.</p>
+            <a href="/get-started" class="authors-button">Work With Us →</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-layout">
+
+        <div class="footer-brand">
+            <a href="/" class="logo">
+                <span class="logo-icon">◈</span>
+                <span>STRATEGIC <b>BOOK</b><br>MARKET POSITIONING</span>
+            </a>
+            <p>A Fully Online Author Services Company.</p>
+            <p>Research. Strategy. Presentation. Discovery.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Our Divisions</h3>
+            <a href="/services">Book Market Research</a>
+            <a href="/services">Author Branding &amp; Media</a>
+            <a href="/services">Book Content &amp; Presentation</a>
+            <a href="/services">Author Digital Presence</a>
+            <a href="/services">Visibility &amp; Discovery</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="/about">About Us</a>
+            <a href="/egbinola-precious">Meet the Founder</a>
+            <a href="/process">Our Process</a>
+            <a href="/why-us">Why Choose Us</a>
+            <a href="/insights">Insights</a>
+            <a href="/get-started">Get Started</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Connect</h3>
+            <p>Follow our professional updates and company activities.</p>
+            <a href="https://www.facebook.com/profile.php?id=61596101490130" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            <a href="https://www.instagram.com/egbinola.precious?fqnt=MWtnZDIyMmp6d241Yg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="mailto:egbinolaprecious72@gmail.com">Email Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Information</h3>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Strategic Book Market Positioning. All rights reserved.
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
